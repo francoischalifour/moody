@@ -1,0 +1,56 @@
+@mixin background-gradient($direction, $firstColor, $secondColor) {
+    background: $firstColor;
+    background: -webkit-linear-gradient(to $direction, $firstColor, $secondColor);
+    background: linear-gradient(to $direction, $firstColor, $secondColor);
+}
+
+@mixin border-radius($arc) {
+    -moz-border-radius: $arc;
+    -webkit-border-radius: $arc;
+    border-radius: $arc;
+}
+
+@mixin box-shadow($depth) {
+    -webkit-box-shadow: $depth;
+    box-shadow: $depth;
+}
+
+@mixin display-flex() {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+@mixin justify-content($justify-content) {
+    -webkit-justify-content: $justify-content;
+    justify-content: $justify-content;
+}
+
+@mixin align-items($align-items) {
+    -webkit-align-items: $align-items;
+    align-items: $align-items;
+}
+
+@mixin translateX($value) {
+    transform: translate3d($value, 0, 0);
+}
+
+@mixin translateY($value) {
+    transform: translate3d(0, $value, 0);
+}
+
+@mixin media-query($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
