@@ -2,7 +2,7 @@
 
 > Moody is a web app that plays music according to your mood.
 
-*Built with: ES6, React, YoutubeAPI.*
+*Built with: ES6, React, SpotifyAPI.*
 
 ## Dev
 

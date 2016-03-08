@@ -1,5 +1,5 @@
 {
-  "name": "react-es6",
+  "name": "Moody",
   "version": "0.0.0",
   "devDependencies": {
     "babelify": "^6.0.2",
@@ -20,9 +20,12 @@
     "gulp-util": "^3.0.3",
     "gulp-webserver": "^0.9.0",
     "react": "^0.13.2",
-    "react-dom": "^0.14.7",
     "vinyl-source-stream": "^1.0.0",
-    "watchify": "^2.3.0"
+    "watchify": "^2.3.0",
+    "axios": "^0.9.1",
+    "react-redux": "^4.4.0",
+    "react-router": "^2.0.0",
+    "redux": "^3.3.1"
   },
   "engines": {
     "node": ">=0.10.0"
