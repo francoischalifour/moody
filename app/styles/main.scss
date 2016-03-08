@@ -113,12 +113,13 @@ a {
   width: 100%;
   max-width: 800px;
   margin: $spacing;
+  box-sizing: border-box;
 
   @include media-query($on-palm) {
     @include flex-direction(row);
   }
 
-  li {
+  a {
     list-style: none;
     height: 164px;
     text-transform: uppercase;
@@ -128,12 +129,12 @@ a {
     @include align-items(center);
     font-weight: bold;
     background-color: rgba(255, 255, 255, .3);
+    border-bottom: none;
     @include border-radius(8px);
     opacity: .6;
     transition: opacity .15s ease-in;
     will-change: opacity;
     width: 100%;
-    box-sizing: border-box;
 
     &:first-child {
       @include background-gradient(top, #e6dada, #274046)
@@ -153,7 +154,7 @@ a {
     }
   }
 
-  li:not(:last-child) {
+  a:not(:last-child) {
     margin-bottom: $spacing;
 
     @include media-query($on-palm) {

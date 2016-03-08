@@ -1,26 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router'
+import { API_MOODS } from '../actions/api.js'
 
 export default class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      moods: [
-        'Sadness',
-        'Joy',
-        'Anger'
-      ]
-    }
-  }
-
   render() {
     return (
-      <ul className="moody-moodbox">{this.state.moods.map(this.renderMood)}</ul>
+      <ul className="moody-moodbox">{API_MOODS.map(this.renderMood)}</ul>
     )
   }
 
   renderMood(mood) {
     return (
-      <li>{mood}</li>
+      <Link to={`playlist/${mood.toLowerCase()}`}><li>{mood}</li></Link>
     )
   }
 }
