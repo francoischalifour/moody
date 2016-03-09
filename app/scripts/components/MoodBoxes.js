@@ -11,7 +11,11 @@ export default class extends React.Component {
 
   renderMood(mood) {
     return (
-      <Link to={`playlist/${mood.toLowerCase()}`}><li>{mood}</li></Link>
+      <Link
+        to={`playlist/${mood.toLowerCase()}`}
+        className={mood.toLowerCase()}>
+        <li>{mood}</li>
+      </Link>
     )
   }
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import { API_MOODS } from '../actions/api.js'
 
+import Playlist from '../components/Playlist.js'
+
 export default class extends React.Component {
   constructor(props) {
     super(props)
@@ -12,24 +14,19 @@ export default class extends React.Component {
       routeParams
     } = this.props
 
-    return (
-      <div className="moody-hero">
-        <h1 className="moody-hero__title">Playlist</h1>
-        {this.renderPlaylist(routeParams)}
-      </div>
-    )
-  }
-
-  renderPlaylist(title) {
-    const playlistName = title.name.toLowerCase()
+    const playlistName = routeParams.name.toLowerCase()
 
     if (this.moods.includes(playlistName)) {
+      document.body.className = playlistName
+
       return (
-        <p className="moody-hero__subtitle">{playlistName}</p>
+        <Playlist name={playlistName}/>
       )
     } else {
       return (
-        <p className="moody-hero__subtitle">unknown playlist</p>
+        <div className="moody-hero">
+          <p className="moody-hero__subtitle">This playlist doesn't exist.</p>
+        </div>
       )
     }
   }

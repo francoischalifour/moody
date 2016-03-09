@@ -18,6 +18,18 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   @include background-gradient(left, #403a3e, #be5869);
+
+  &.sadness {
+    @include background-gradient(left, #606c88, #3f4c6b)
+  }
+
+  &.joy {
+    @include background-gradient(left, #f09819, #edde5d)
+  }
+
+  &.anger {
+    @include background-gradient(left, #232526, #414345)
+  }
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -130,36 +142,55 @@ a {
     font-weight: bold;
     background-color: rgba(255, 255, 255, .3);
     border-bottom: none;
-    @include border-radius(8px);
-    opacity: .6;
+    @include border-radius(2px);
+    @include box-shadow(0 3px 6px rgba(0, 0, 0, .16));
+    opacity: .8;
     transition: opacity .15s ease-in;
     will-change: opacity;
     width: 100%;
 
-    &:first-child {
-      @include background-gradient(top, #e6dada, #274046)
-    }
-
-    &:nth-child(2) {
-      @include background-gradient(top, #00c9ff, #92fe9d)
-    }
-
-    &:nth-child(3) {
-      @include background-gradient(top, #000, #e74c3c)
-    }
-
     &:hover {
-      cursor: pointer;
-      opacity: .8;
+      opacity: 1;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $spacing;
+
+      @include media-query($on-palm) {
+        margin: 0;
+        margin-right: $spacing;
+      }
+    }
+
+    &.sadness {
+      @include background-gradient(top, #606c88, #3f4c6b)
+    }
+
+    &.joy {
+      @include background-gradient(top, #f09819, #edde5d)
+    }
+
+    &.anger {
+      @include background-gradient(top, #232526, #414345)
     }
   }
+}
 
-  a:not(:last-child) {
-    margin-bottom: $spacing;
+/**
+ * Moody music player
+ */
 
-    @include media-query($on-palm) {
-      margin: 0;
-      margin-right: $spacing;
-    }
-  }
+.moody-player {
+  height: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.moody-player iframe,
+.moody-player object,
+.moody-player embed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
