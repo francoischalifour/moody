@@ -34,5 +34,9 @@
     "transform": [
       "babelify"
     ]
+  },
+  "dependencies": {
+    "redux-promise-middleware": "^2.3.3",
+    "redux-thunk": "^2.0.1"
   }
 }
