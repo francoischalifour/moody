@@ -3,16 +3,21 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, Route, hashHistory } from 'react-router'
 
+import configureStore from './store/configureStore'
+
 import Home from './components/Home'
 import PlaylistContainer from './containers/PlaylistContainer'
 import About from './components/About'
 
+const store = configureStore()
 const mountNode = document.getElementById('app')
 
-React.render((
-  <Router history={hashHistory}>
-    <Route path="about" component={About}/>
-    <Route path="playlist/:name" component={PlaylistContainer}/>
-    <Route path="*" component={Home}/>
-  </Router>
+render((
+  <Provider store={store}>
+    <Router history={hashHistory}>
+      <Route path="about" component={About}/>
+      <Route path="playlist/:name" component={PlaylistContainer}/>
+      <Route path="*" component={Home}/>
+    </Router>
+  </Provider>
 ), mountNode)

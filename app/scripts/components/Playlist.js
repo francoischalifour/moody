@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default class extends React.Component {
+export default class extends Component {
   constructor(props) {
     super(props)
   }
 
   render() {
     const {
-      name
+      name,
+      playlist
     } = this.props
 
     return (
@@ -16,11 +17,11 @@ export default class extends React.Component {
 
         <div className="moody-player">
           <iframe
-            src="https://embed.spotify.com/?uri=spotify:user:qlmhuge:playlist:6Df19VKaShrdWrAnHinwVO"
+            src={`https://embed.spotify.com/?uri=${playlist}`}
             width="300"
             height="80"
-            frameborder="0"
-            allowtransparency="true"
+            frameBorder="0"
+            allowTransparency="true"
           ></iframe>
         </div>
       </div>
