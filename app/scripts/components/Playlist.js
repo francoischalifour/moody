@@ -9,15 +9,20 @@ export default class extends Component {
   render() {
     const {
       name,
-      playlist
+      playlist,
+      cover
     } = this.props
 
     return (
       <div className="moody-hero">
         <h1 className="moody-hero__title">Playlist {name}</h1>
-        <div>
-          <Link to="/">Back home</Link>
-        </div>
+        <Link to="/">Back home</Link>
+
+        <img
+          className="moody-playlist__cover"
+          src={cover}
+          alt="Playlist cover"
+        />
 
         <div className="moody-player">
           <iframe

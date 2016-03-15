@@ -26,7 +26,7 @@ export const getPlaylists = (playlistName) => {
   return dispatch => {
     dispatch(actionRequestPlaylists())
 
-    const url = `${SPOTIFY_BASE}v1/search?q=${playlistName}&type=playlist`
+    const url = `${SPOTIFY_BASE}/search?q=${playlistName}&type=playlist`
 
     return ajax.get(url)
       .then(playlists => dispatch(actionReceivePlaylists(playlists)))

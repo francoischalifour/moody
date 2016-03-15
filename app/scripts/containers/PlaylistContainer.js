@@ -42,11 +42,16 @@ class PlaylistContainer extends Component {
         )
       } else {
         const playlistContent = playlists.playlists.data.playlists.items
-        const randomSongNo = Math.random() * (playlistContent.length)
+        const randomSongNo = Math.random() * (playlistContent.length - 1)
         const playlistURI = playlistContent[parseInt(randomSongNo)].uri
+        const playlistCover = playlistContent[parseInt(randomSongNo)].images[0].url
 
         return (
-          <Playlist name={routeParams.name} playlist={playlistURI}/>
+          <Playlist
+            name={routeParams.name}
+            playlist={playlistURI}
+            cover={playlistCover}
+          />
         )
       }
     }

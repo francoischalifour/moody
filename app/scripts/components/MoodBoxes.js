@@ -9,11 +9,11 @@ export default class extends Component {
     )
   }
 
-  renderMood(mood) {
+  renderMood(mood, index) {
     return (
       <Link
         to={`playlist/${mood.toLowerCase()}`}
-        className={mood.toLowerCase()}>
+        className={mood.toLowerCase()} key={index}>
         <li>{mood}</li>
       </Link>
     )
