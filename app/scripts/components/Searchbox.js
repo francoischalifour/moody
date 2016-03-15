@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default class extends React.Component {
+export default class extends Component {
   render() {
     const fieldStyle = {
       padding: '16px',

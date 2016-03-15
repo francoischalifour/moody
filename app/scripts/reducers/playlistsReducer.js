@@ -21,10 +21,9 @@ export default function playlistsReducer(state = initialState, action) {
 
       return assign({}, state, {
         isFetching: false,
+        isComplete: true,
         playlists
       })
-
-    // TODO: add failure case
 
     default:
       return state

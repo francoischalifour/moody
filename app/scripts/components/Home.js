@@ -1,7 +1,7 @@
-import React from 'react'
-import MoodBoxes from './MoodBoxes.js'
+import React, { Component } from 'react'
+import MoodBoxes from './MoodBoxes'
 
-export default class extends React.Component {
+export default class extends Component {
   render() {
     return (
       <div className="moody-hero">

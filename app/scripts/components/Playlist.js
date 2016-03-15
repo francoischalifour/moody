@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 export default class extends Component {
   constructor(props) {
@@ -14,6 +15,9 @@ export default class extends Component {
     return (
       <div className="moody-hero">
         <h1 className="moody-hero__title">Playlist {name}</h1>
+        <div>
+          <Link to="/">Back home</Link>
+        </div>
 
         <div className="moody-player">
           <iframe
