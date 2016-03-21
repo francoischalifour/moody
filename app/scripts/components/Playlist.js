@@ -16,7 +16,6 @@ export default class extends Component {
     return (
       <div className="moody-hero">
         <h1 className="moody-hero__title">Playlist {name}</h1>
-        <Link to="/">Back home</Link>
 
         <img
           className="moody-playlist__cover"

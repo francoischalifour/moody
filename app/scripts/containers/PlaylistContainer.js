@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { API_MOODS } from '../actions/api.js'
 import { getPlaylists } from '../actions/playlists'
 
+import Sidebar from '../components/Sidebar'
 import Playlist from '../components/Playlist'
 
 class PlaylistContainer extends Component {
@@ -36,29 +37,41 @@ class PlaylistContainer extends Component {
 
       if (!isComplete) {
         return (
-          <div className="moody-hero">
-            <p className="moody-hero__subtitle">Loading...</p>
+          <div>
+            <Sidebar/>
+
+            <div className="moody-hero">
+              <p className="moody-hero__subtitle">Loading...</p>
+            </div>
           </div>
         )
       } else {
-        const playlistContent = playlists.playlists.data.playlists.items
+        const playlistContent = playlists.playlists.playlists.items
         const randomSongNo = Math.random() * (playlistContent.length - 1)
         const playlistURI = playlistContent[parseInt(randomSongNo)].uri
         const playlistCover = playlistContent[parseInt(randomSongNo)].images[0].url
 
         return (
-          <Playlist
-            name={routeParams.name}
-            playlist={playlistURI}
-            cover={playlistCover}
-          />
+          <div>
+            <Sidebar/>
+
+            <Playlist
+              name={routeParams.name}
+              playlist={playlistURI}
+              cover={playlistCover}
+            />
+          </div>
         )
       }
     }
 
     return (
-      <div className="moody-hero">
-        <p className="moody-hero__subtitle">This playlist doesn't exist.</p>
+      <div>
+        <Sidebar/>
+
+        <div className="moody-hero">
+          <p className="moody-hero__subtitle">This playlist doesn't exist.</p>
+        </div>
       </div>
     )
   }

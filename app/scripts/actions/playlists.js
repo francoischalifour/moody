@@ -1,13 +1,9 @@
-import ajax from 'axios'
-import {
-  SPOTIFY_BASE,
-  SPOTIFY_CLIENT_ID,
-  SPOTIFY_CLIENT_SECRET,
-  GET_PLAYLIST
-} from './spotify'
+import Spotify from 'spotify-web-api-js'
 
 export const PLAYLISTS_REQUEST = 'PLAYLISTS_REQUEST'
 export const PLAYLISTS_RECEIVE = 'PLAYLISTS_RECEIVE'
+
+const spotifyApi = new Spotify()
 
 const actionRequestPlaylists = () => {
   return {
@@ -15,20 +11,19 @@ const actionRequestPlaylists = () => {
   }
 }
 
-const actionReceivePlaylists = (playlists) => {
+const actionReceivePlaylists = playlists => {
   return {
     type: PLAYLISTS_RECEIVE,
     playlists
   }
 }
 
-export const getPlaylists = (playlistName) => {
+export const getPlaylists = playlistName => {
   return dispatch => {
     dispatch(actionRequestPlaylists())
 
-    const url = `${SPOTIFY_BASE}/search?q=${playlistName}&type=playlist`
-
-    return ajax.get(url)
+    spotifyApi
+      .searchPlaylists(playlistName)
       .then(playlists => dispatch(actionReceivePlaylists(playlists)))
       .catch(err => console.error('Cannot load playlist: ', err))
   }

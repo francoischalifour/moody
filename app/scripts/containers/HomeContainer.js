@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
-import MoodBoxes from '../components/MoodBoxes'
 import { connect } from 'react-redux'
 
+import Sidebar from '../components/Sidebar'
+import MoodBoxes from '../components/MoodBoxes'
+
 import {
-	setTokens
+  setTokens
 } from '../actions/authentication'
+
+import {
+	getUser
+} from '../actions/user'
 
 class HomeContainer extends Component {
   componentDidMount() {
@@ -13,19 +19,37 @@ class HomeContainer extends Component {
 			dispatch
 		} = this.props
 
-		dispatch(setTokens(routeParams.splat))
+    dispatch(setTokens(routeParams.splat))
+		dispatch(getUser())
   }
 
   render() {
-    return (
-      <div className="moody-hero">
-        <h1 className="moody-hero__title">Moody</h1>
-        <p className="moody-hero__subtitle">Find the perfect music for you mood.</p>
+    const {
+      isComplete,
+      user
+    } = this.props
 
-        <MoodBoxes/>
+    return (
+      <div>
+        <Sidebar/>
+
+        <div className="moody-hero">
+          <h1 className="moody-hero__title">Moody</h1>
+          <p className="moody-hero__subtitle">Find the perfect music for you mood.</p>
+
+          <MoodBoxes/>
+        </div>
       </div>
     )
   }
 }
 
-export default connect()(HomeContainer)
+function mapStateToProps(state) {
+  const userState = state.user
+
+  return {
+    user: userState
+  }
+}
+
+export default connect(mapStateToProps)(HomeContainer)

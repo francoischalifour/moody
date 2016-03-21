@@ -8,6 +8,13 @@ body,
   height: 100%;
 }
 
+div {
+  min-height: 100%;
+  @include display-flex;
+  @include justify-content(center);
+  @include flex-direction(column);
+}
+
 body {
   font-family: $font-family;
   color: #fff;
@@ -110,6 +117,25 @@ a {
   @include border-radius(4px);
   background-color: rgba(255, 255, 255, .9);
   @include box-shadow(0 4px 6px rgba(0, 0, 0, .16));
+}
+
+/**
+ * Moody sidebar
+ */
+
+.moody-sidebar {
+  @include display-flex;
+  @include flex-direction(row);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  padding: $spacing;
+  line-height: 2;
+
+  ul {
+    list-style: none;
+  }
 }
 
 /**
