@@ -8,7 +8,7 @@ body,
   height: 100%;
 }
 
-div {
+#app > div {
   min-height: 100%;
   @include display-flex;
   @include justify-content(center);
@@ -94,6 +94,17 @@ a {
   text-align: center;
   margin: 0 $spacing;
   min-height: 100%;
+  animation: fadeIn .5s ease-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .moody-hero__title {
@@ -301,5 +312,50 @@ a {
 
   &:hover {
     background-color: rgba(50, 205, 100, 1);
+  }
+}
+
+/**
+ * Moody notification
+ */
+
+.moody-notification {
+  position: fixed;
+  @include display-flex;
+  @include justify-content(center);
+  @include flex-direction(column);
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  height: 64px;
+  background-color: rgba(50, 205, 100, .95);
+  @include box-shadow(0 4px 6px rgba(100, 100, 100, .16));
+  animation: slideFade 3s ease-out both;
+
+  p {
+    margin: 0;
+  }
+
+  &.error {
+    background-color: rgba(211, 47, 47, .95);
+  }
+}
+
+@keyframes slideFade {
+  from {
+    @include translateY(-60%);
+    opacity: 0;
+  }
+
+  10%, 90% {
+    @include translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    @include translateY(-60%);
+    opacity: 0;
   }
 }

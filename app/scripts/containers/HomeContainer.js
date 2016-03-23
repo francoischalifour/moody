@@ -2,14 +2,15 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { setTokens } from '../actions/authentication'
+import {
+  USER_KEY,
+  SPOTIFY_TOKEN_KEY
+} from '../actions/spotify'
 import { getUser } from '../actions/user'
 
 import SidebarContainer from '../containers/SidebarContainer'
 import MoodBoxes from '../components/MoodBoxes'
-
-import {
-  USER_KEY
-} from '../actions/spotify'
+import Notification from '../components/Notification'
 
 class HomeContainer extends Component {
   componentDidMount() {
@@ -33,9 +34,13 @@ class HomeContainer extends Component {
       isComplete
     } = user
 
-    if (isComplete) {
-      const userName = user.user.display_name || user.user.uri.split(':')[2]
-      localStorage.setItem(USER_KEY, userName)
+    let username = 'stranger'
+    let notification = null
+
+    if (isComplete && !localStorage[SPOTIFY_TOKEN_KEY]) {
+      username = user.user.display_name || user.user.uri.split(':')[2]
+      localStorage.setItem(USER_KEY, username)
+      notification = <Notification message="See you soon, [data]!" data={username}/>
     }
 
     return (
@@ -48,6 +53,8 @@ class HomeContainer extends Component {
 
           <MoodBoxes/>
         </div>
+
+        {notification}
       </div>
     )
   }
