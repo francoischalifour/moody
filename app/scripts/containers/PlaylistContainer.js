@@ -80,9 +80,11 @@ class PlaylistContainer extends Component {
 
 function mapStateToProps(state) {
   const playlistsState = state.playlists
+  const tracksState = state.tracks
 
   return {
-    playlists: playlistsState
+    playlists: playlistsState,
+    tracks: tracksState
   }
 }
 

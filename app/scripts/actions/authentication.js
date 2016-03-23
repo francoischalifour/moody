@@ -3,7 +3,8 @@ import Spotify from 'spotify-web-api-js'
 import {
   SPOTIFY_CLIENT_ID,
   REDIRECT_URI,
-  STATE_KEY
+  STATE_KEY,
+  SPOTIFY_TOKEN_KEY
 } from './spotify'
 
 export const SPOTIFY_TOKENS = 'SPOTIFY_TOKENS'
@@ -16,12 +17,13 @@ export const LOGIN_RECIEVE = 'LOGIN_RECIEVE'
 
 const spotifyApi = new Spotify()
 
-export function setTokens(accessToken) {
+export const setTokens = accessToken => dispatch => {
   if (accessToken) {
     const tokenState = accessToken.split('state=')[1].split('?')[0]
 
     if (tokenState === localStorage[STATE_KEY]) {
       const token = accessToken.split('=')[1].split('&')[0]
+      localStorage.setItem(SPOTIFY_TOKEN_KEY, token)
       spotifyApi.setAccessToken(token)
     } else {
       //TODO: Show an error

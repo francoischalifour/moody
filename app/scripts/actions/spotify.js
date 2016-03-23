@@ -12,3 +12,5 @@ export const FOLLOW = 'FOLLOW'
 export const GET_PLAYLIST = 'GET_PLAYLIST'
 
 export const STATE_KEY = 'SPOTIFY_AUTH_STATE'
+export const USER_KEY = 'SPOTIFY_USER'
+export const SPOTIFY_TOKEN_KEY = 'SPOTIFY_TOKEN'
