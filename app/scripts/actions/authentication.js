@@ -17,16 +17,17 @@ export const LOGIN_RECIEVE = 'LOGIN_RECIEVE'
 const spotifyApi = new Spotify()
 
 export function setTokens(accessToken) {
-	if (accessToken) {
-    const tokenString = accessToken.split('=')[1].split('&')[0]
-    spotifyApi.setAccessToken(tokenString)
-  }
+  if (accessToken) {
+    const tokenState = accessToken.split('state=')[1].split('?')[0]
 
- 	return {
-    type: SPOTIFY_TOKENS,
-    accessToken
+    if (tokenState === localStorage[STATE_KEY]) {
+      const token = accessToken.split('=')[1].split('&')[0]
+      spotifyApi.setAccessToken(token)
+    } else {
+      //TODO: Show an error
+      console.warn('tokenState does not match')
+    }
   }
-}
 
 export const loginUser = () => dispatch => {
   const state = generateRandomString(16)
