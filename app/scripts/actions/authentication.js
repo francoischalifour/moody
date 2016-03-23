@@ -1,3 +1,4 @@
+import { hashHistory } from 'react-router'
 import Spotify from 'spotify-web-api-js'
 
 import {
@@ -44,6 +45,12 @@ export const loginUser = () => dispatch => {
       url += '&state=' + encodeURIComponent(state)
 
   window.location = url
+}
+
+export const logoutUser = () => dispatch => {
+  localStorage.clear()
+
+  hashHistory.push('/')
 }
 
 function generateRandomString(length) {

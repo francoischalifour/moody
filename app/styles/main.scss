@@ -256,8 +256,6 @@ a {
   height: auto;
 }
 
-
-
 .moody-player iframe,
 .moody-player object,
 .moody-player embed {
@@ -267,7 +265,7 @@ a {
   width: 100%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .16);
   @include translateY(100%);
-  animation: slideUp .5s 1.5s ease-out both;
+  animation: slideUp .3s 1.5s ease-out both;
   will-change: transform;
 }
 
@@ -290,6 +288,7 @@ a {
   outline: none;
   min-width: 192px;
   padding: 16px 48px;
+  margin: 24px 0;
   font-family: $font-family;
   font-size: 1.1rem;
   border: 0;

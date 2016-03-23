@@ -7,7 +7,7 @@ import configureStore from './store/configureStore'
 
 import HomeContainer from './containers/HomeContainer'
 import PlaylistContainer from './containers/PlaylistContainer'
-import LoginContainer from './containers/LoginContainer'
+import UserContainer from './containers/UserContainer'
 import About from './components/About'
 
 const store = configureStore()
@@ -18,7 +18,7 @@ render((
     <Router history={hashHistory}>
       <Route path="about" component={About}/>
       <Route path="playlist/:name" component={PlaylistContainer}/>
-      <Route path="login" component={LoginContainer}/>
+      <Route path="account" component={UserContainer}/>
 
       <Route path="*" component={HomeContainer}/>
     </Router>

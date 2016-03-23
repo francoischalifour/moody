@@ -17,7 +17,7 @@ export default class extends Component {
           </li>
 
           <li>
-            <Link to="/login" title="Account">
+            <Link to="/account" title="Account">
               <i className="material-icons">account_circle</i>
             </Link>
           </li>
