@@ -1,16 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import Sidebar from '../components/Sidebar'
+import { setTokens } from '../actions/authentication'
+
+import SidebarContainer from '../containers/SidebarContainer'
 import MoodBoxes from '../components/MoodBoxes'
-
-import {
-  setTokens
-} from '../actions/authentication'
-
-import {
-	getUser
-} from '../actions/user'
 
 class HomeContainer extends Component {
   componentDidMount() {
@@ -20,18 +14,17 @@ class HomeContainer extends Component {
 		} = this.props
 
     dispatch(setTokens(routeParams.splat))
-		dispatch(getUser())
   }
 
   render() {
     const {
-      isComplete,
-      user
+      user,
+      isComplete
     } = this.props
 
     return (
       <div>
-        <Sidebar/>
+        <SidebarContainer/>
 
         <div className="moody-hero">
           <h1 className="moody-hero__title">Moody</h1>

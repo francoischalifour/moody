@@ -22,23 +22,24 @@ export function setTokens(accessToken) {
     spotifyApi.setAccessToken(tokenString)
   }
 
- 	return { type: SPOTIFY_TOKENS, accessToken }
+ 	return {
+    type: SPOTIFY_TOKENS,
+    accessToken
+  }
 }
 
-export const loginUser = () => {
-	return dispatch => {
-    const state = generateRandomString(16)
-    localStorage.setItem(STATE_KEY, state)
-    const scope = 'user-read-private user-read-email'
-    let url = 'https://accounts.spotify.com/authorize'
-        url += '?response_type=token'
-        url += '&client_id=' + encodeURIComponent(SPOTIFY_CLIENT_ID)
-        url += '&scope=' + encodeURIComponent(scope)
-        url += '&redirect_uri=' + encodeURIComponent(REDIRECT_URI)
-        url += '&state=' + encodeURIComponent(state)
+export const loginUser = () => dispatch => {
+  const state = generateRandomString(16)
+  localStorage.setItem(STATE_KEY, state)
+  const scope = 'user-read-private user-read-email'
+  let url = 'https://accounts.spotify.com/authorize'
+      url += '?response_type=token'
+      url += '&client_id=' + encodeURIComponent(SPOTIFY_CLIENT_ID)
+      url += '&scope=' + encodeURIComponent(scope)
+      url += '&redirect_uri=' + encodeURIComponent(REDIRECT_URI)
+      url += '&state=' + encodeURIComponent(state)
 
-    window.location = url
-	}
+  window.location = url
 }
 
 function generateRandomString(length) {

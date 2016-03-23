@@ -51,6 +51,10 @@ img {
   vertical-align: middle;
 }
 
+p {
+  line-height: 1.4;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -103,6 +107,36 @@ a {
 }
 
 /**
+ * Moody sidebar
+ */
+
+.moody-sidebar {
+  @include display-flex;
+  @include flex-direction(row);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  padding: $spacing;
+  line-height: 2;
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    border-bottom: none;
+    opacity: .8;
+    transition: .15s opacity ease-in;
+    will-change: opacity;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+/**
  * Moody searchbox
  */
 
@@ -117,25 +151,6 @@ a {
   @include border-radius(4px);
   background-color: rgba(255, 255, 255, .9);
   @include box-shadow(0 4px 6px rgba(0, 0, 0, .16));
-}
-
-/**
- * Moody sidebar
- */
-
-.moody-sidebar {
-  @include display-flex;
-  @include flex-direction(row);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 64px;
-  padding: $spacing;
-  line-height: 2;
-
-  ul {
-    list-style: none;
-  }
 }
 
 /**
@@ -210,11 +225,26 @@ a {
   z-index: -1;
   position: absolute;
   opacity: .2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   border-radius: 50%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .16);
+  animation: popIn .5s 1s ease-out both;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(.8);
+  }
+
+  to {
+    opacity: .2;
+    transform: scale(1);
+  }
 }
 
 /**
@@ -222,10 +252,11 @@ a {
  */
 
 .moody-player {
-  height: 0;
   max-width: 100%;
   height: auto;
 }
+
+
 
 .moody-player iframe,
 .moody-player object,
@@ -234,4 +265,42 @@ a {
   bottom: 0;
   left: 0;
   width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .16);
+  @include translateY(100%);
+  animation: slideUp .5s 1.5s ease-out both;
+  will-change: transform;
+}
+
+@keyframes slideUp {
+  from {
+    @include translateY(100%);
+  }
+
+  to {
+    @include translateY(0);
+  }
+}
+
+/**
+ * Moody login
+ */
+
+.moody-login__button {
+  cursor: pointer;
+  outline: none;
+  min-width: 192px;
+  padding: 16px 48px;
+  font-family: $font-family;
+  font-size: 1.1rem;
+  border: 0;
+  @include border-radius(4px);
+  color: #fff;
+  background-color: rgba(50, 205, 100, .8);
+  @include box-shadow(0 4px 6px rgba(0, 0, 0, .16));
+  transition: .15s background-color ease-in;
+  will-change: background-color;
+
+  &:hover {
+    background-color: rgba(50, 205, 100, 1);
+  }
 }

@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { API_MOODS } from '../actions/api.js'
+
+import { API_MOODS } from '../actions/api'
 import { getPlaylists } from '../actions/playlists'
 
-import Sidebar from '../components/Sidebar'
+import SidebarContainer from '../containers/SidebarContainer'
 import Playlist from '../components/Playlist'
 
 class PlaylistContainer extends Component {
   constructor(props) {
     super(props)
-    this.moods = API_MOODS.map((mood) => mood.toLowerCase())
+    this.moods = API_MOODS.map(mood => mood.toLowerCase())
   }
 
   componentDidMount() {
@@ -38,7 +39,7 @@ class PlaylistContainer extends Component {
       if (!isComplete) {
         return (
           <div>
-            <Sidebar/>
+            <SidebarContainer/>
 
             <div className="moody-hero">
               <p className="moody-hero__subtitle">Loading...</p>
@@ -53,7 +54,7 @@ class PlaylistContainer extends Component {
 
         return (
           <div>
-            <Sidebar/>
+            <SidebarContainer/>
 
             <Playlist
               name={routeParams.name}
@@ -67,7 +68,7 @@ class PlaylistContainer extends Component {
 
     return (
       <div>
-        <Sidebar/>
+        <SidebarContainer/>
 
         <div className="moody-hero">
           <p className="moody-hero__subtitle">This playlist doesn't exist.</p>

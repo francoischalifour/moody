@@ -1,21 +1,31 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
-import {
-  loginUser
-} from '../actions/authentication'
-
 export default class extends Component {
   render() {
+    const {
+      login
+    } = this.props
+
     return (
       <div className="moody-sidebar">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/" title="Home">
+              <i className="material-icons">home</i>
+            </Link>
           </li>
 
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/login" title="Account">
+              <i className="material-icons">account_circle</i>
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/about" title="About">
+              <i className="material-icons">info_outline</i>
+            </Link>
           </li>
         </ul>
       </div>
