@@ -28,6 +28,7 @@ export function setTokens(accessToken) {
       console.warn('tokenState does not match')
     }
   }
+}
 
 export const loginUser = () => dispatch => {
   const state = generateRandomString(16)
