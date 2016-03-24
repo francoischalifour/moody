@@ -26,8 +26,22 @@ body {
   font-kerning: normal;
   @include background-gradient(left, #403a3e, #be5869);
 
+  &::after {
+    content: '';
+    z-index: -100;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    @include background-gradient(top, #403a3e, #be5869);
+    animation: magicGradient 12s ease-in-out infinite alternate;
+  }
+
   &.sadness {
-    @include background-gradient(left, #606c88, #3f4c6b)
+    @include background-gradient(left, #606c88, #3f4c6b);
   }
 
   &.joy {
@@ -36,6 +50,16 @@ body {
 
   &.anger {
     @include background-gradient(left, #232526, #414345)
+  }
+}
+
+@keyframes magicGradient {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .6;
   }
 }
 

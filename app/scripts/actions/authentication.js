@@ -13,23 +13,20 @@ export const SPOTIFY_ME_BEGIN = 'SPOTIFY_ME_BEGIN'
 export const SPOTIFY_ME_SUCCESS = 'SPOTIFY_ME_SUCCESS'
 export const SPOTIFY_ME_FAILURE = 'SPOTIFY_ME_FAILURE'
 
-export const LOGIN_REQUEST = 'LOGIN_REQUEST'
-export const LOGIN_RECIEVE = 'LOGIN_RECIEVE'
-
 const spotifyApi = new Spotify()
 
 export const setTokens = accessToken => dispatch => {
-  if (accessToken) {
-    const tokenState = accessToken.split('state=')[1].split('?')[0]
+  if (!accessToken) return
 
-    if (tokenState === localStorage[STATE_KEY]) {
-      const token = accessToken.split('=')[1].split('&')[0]
-      localStorage.setItem(SPOTIFY_TOKEN_KEY, token)
-      spotifyApi.setAccessToken(token)
-    } else {
-      //TODO: Show an error
-      console.warn('tokenState does not match')
-    }
+  const tokenState = accessToken.split('state=')[1].split('?')[0]
+
+  if (tokenState === localStorage[STATE_KEY]) {
+    const token = accessToken.split('=')[1].split('&')[0]
+    localStorage.setItem(SPOTIFY_TOKEN_KEY, token)
+    spotifyApi.setAccessToken(token)
+  } else {
+    // TODO: Show an error
+    console.warn('tokenState does not match')
   }
 }
 

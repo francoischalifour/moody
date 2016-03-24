@@ -7,6 +7,7 @@ import {
 
 const initialState = {
   isFetching: false,
+  isComplete: false,
   user: {}
 }
 
@@ -14,7 +15,8 @@ export default function userReducer(state = initialState, action) {
   switch (action.type) {
     case USER_REQUEST:
       return assign({}, state, {
-        isFetching: true
+        isFetching: true,
+        isComplete: false
       })
 
     case USER_RECEIVE:

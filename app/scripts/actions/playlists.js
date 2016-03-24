@@ -5,8 +5,6 @@ export const PLAYLISTS_RECEIVE = 'PLAYLISTS_RECEIVE'
 export const PLAYLISTTRACKS_REQUEST = 'PLAYLISTTRACKS_REQUEST'
 export const PLAYLISTTRACKS_RECEIVE = 'PLAYLISTTRACKS_RECEIVE'
 
-
-
 const spotifyApi = new Spotify()
 
 const actionRequestPlaylists = () => {

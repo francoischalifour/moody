@@ -27,7 +27,8 @@ class HomeContainer extends Component {
 
   render() {
     const {
-      user,
+      routeParams,
+      user
     } = this.props
 
     const {
@@ -37,10 +38,12 @@ class HomeContainer extends Component {
     let username = 'stranger'
     let notification = null
 
-    if (isComplete && !localStorage[SPOTIFY_TOKEN_KEY]) {
+    if (isComplete && routeParams.splat) {
       username = user.user.display_name || user.user.uri.split(':')[2]
       localStorage.setItem(USER_KEY, username)
-      notification = <Notification message="See you soon, [data]!" data={username}/>
+      notification = <Notification message="Welcome to Moody, [data]!" data={username}/>
+    } else if (isComplete && !localStorage[SPOTIFY_TOKEN_KEY]) {
+      notification = <Notification message="See you soon!"/>
     }
 
     return (
