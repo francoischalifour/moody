@@ -5,7 +5,9 @@ import { API_MOODS } from '../actions/api'
 export default class extends Component {
   render() {
     return (
-      <ul className="moody-moodbox">{API_MOODS.map(this.renderMood)}</ul>
+      <ul className="moody-moodbox">
+        {API_MOODS.map(this.renderMood)}
+      </ul>
     )
   }
 
@@ -13,7 +15,9 @@ export default class extends Component {
     return (
       <Link
         to={`playlist/${mood.toLowerCase()}`}
-        className={mood.toLowerCase()} key={index}>
+        className={mood.toLowerCase()}
+        key={index}
+      >
         <li>{mood}</li>
       </Link>
     )

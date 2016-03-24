@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import { setTokens } from '../actions/authentication'
+import { setTokens } from '../actions/auth'
 import {
   USER_KEY,
   SPOTIFY_TOKEN_KEY
 } from '../actions/spotify'
 import { getUser } from '../actions/user'
 
-import SidebarContainer from '../containers/SidebarContainer'
+import Sidebar from '../components/Sidebar'
 import MoodBoxes from '../components/MoodBoxes'
 import Notification from '../components/Notification'
 
@@ -41,20 +41,22 @@ class HomeContainer extends Component {
     if (isComplete && routeParams.splat) {
       username = user.user.display_name || user.user.uri.split(':')[2]
       localStorage.setItem(USER_KEY, username)
-      notification = <Notification message="Welcome to Moody, [data]!" data={username}/>
+      notification = <Notification message="Welcome to Moody, [data]!" data={username} />
     } else if (isComplete && !localStorage[SPOTIFY_TOKEN_KEY]) {
-      notification = <Notification message="See you soon!"/>
+      notification = <Notification message="See you soon!" />
     }
 
     return (
       <div>
-        <SidebarContainer/>
+        <Sidebar />
 
         <div className="moody-hero">
           <h1 className="moody-hero__title">Moody</h1>
-          <p className="moody-hero__subtitle">Find the perfect music for you mood.</p>
+          <p className="moody-hero__subtitle">
+            Find the perfect music for you mood.
+          </p>
 
-          <MoodBoxes/>
+          <MoodBoxes />
         </div>
 
         {notification}
@@ -63,12 +65,10 @@ class HomeContainer extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  const userState = state.user
-
+function select(state) {
   return {
-    user: userState
+    user: state.user
   }
 }
 
-export default connect(mapStateToProps)(HomeContainer)
+export default connect(select)(HomeContainer)

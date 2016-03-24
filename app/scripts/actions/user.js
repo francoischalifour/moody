@@ -18,13 +18,11 @@ const actionReceiveUser = user => {
   }
 }
 
-export const getUser = () => {
-  return dispatch => {
-    dispatch(actionRequestUser())
+export const getUser = () => dispatch => {
+  dispatch(actionRequestUser())
 
-    spotifyApi
-      .getMe()
-      .then(user => dispatch(actionReceiveUser(user)))
-      .catch(err => console.error('Cannot retrieve user: ', err))
-  }
+  spotifyApi
+    .getMe()
+    .then(user => dispatch(actionReceiveUser(user)))
+    .catch(err => console.error('Cannot retrieve user: ', err))
 }

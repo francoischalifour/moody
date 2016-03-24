@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import SidebarContainer from '../containers/SidebarContainer'
+import Sidebar from '../components/Sidebar'
 
 export default class extends Component {
   render() {
     return (
       <div>
-        <SidebarContainer/>
+        <Sidebar />
 
         <div className="moody-hero">
           <h1 className="moody-hero__title">About</h1>

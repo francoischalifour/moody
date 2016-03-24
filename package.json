@@ -1,6 +1,9 @@
 {
   "name": "Moody",
   "version": "0.0.0",
+  "description": "Find the perfect music for you mood.",
+  "license": "MIT",
+  "repository": "francoischalifour/moody",
   "devDependencies": {
     "babelify": "^6.0.2",
     "browserify": "^8.1.3",
@@ -31,7 +34,6 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.9.1",
     "object-assign": "^4.0.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",

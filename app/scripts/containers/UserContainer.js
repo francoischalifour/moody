@@ -4,44 +4,38 @@ import { connect } from 'react-redux'
 import {
   loginUser,
   logoutUser
-} from '../actions/authentication'
-
+} from '../actions/auth'
 import {
   USER_KEY,
   SPOTIFY_TOKEN_KEY
 } from '../actions/spotify'
 
-import SidebarContainer from '../containers/SidebarContainer'
+import Sidebar from '../components/Sidebar'
 
 class UserContainer extends Component {
-	componentDidMount() {
-			const {
-			routeParams,
-			dispatch
-		} = this.props
-	}
-
-  login() {
+  handleLogin() {
     this.props.dispatch(loginUser())
   }
 
-	logout() {
-		this.props.dispatch(logoutUser())
-	}
+  handleLogout() {
+    this.props.dispatch(logoutUser())
+  }
 
-	render() {
+  render() {
     if (!localStorage[SPOTIFY_TOKEN_KEY]) {
-  		return (
+      return (
         <div>
-          <SidebarContainer/>
+          <Sidebar />
 
           <div className="moody-hero">
             <h1 className="moody-hero__title">Log in with Spotify</h1>
-            <p className="moody-hero__subtitle">Get the full experience by linking your account.</p>
+            <p className="moody-hero__subtitle">
+              Get the full experience by linking your account.
+            </p>
 
             <button
               className="moody-login__button"
-              onClick={this.login.bind(this)}
+              onClick={this.handleLogin.bind(this)}
             >
                Login with Spotify
             </button>
@@ -54,22 +48,24 @@ class UserContainer extends Component {
 
     return (
       <div>
-        <SidebarContainer/>
+        <Sidebar />
 
         <div className="moody-hero">
           <h1 className="moody-hero__title">Hello, {username}</h1>
-          <p className="moody-hero__subtitle">We hope your enjoy your experience.</p>
+          <p className="moody-hero__subtitle">
+            We hope you enjoy your experience.
+          </p>
 
           <button
             className="moody-login__button"
-            onClick={this.logout.bind(this)}
+            onClick={this.handleLogout.bind(this)}
           >
              Log out
           </button>
         </div>
       </div>
     )
-	}
+  }
 }
 
 export default connect()(UserContainer)

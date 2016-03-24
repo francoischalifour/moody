@@ -3,10 +3,6 @@ import { Link } from 'react-router'
 
 export default class extends Component {
   render() {
-    const {
-      login
-    } = this.props
-
     return (
       <div className="moody-sidebar">
         <ul>

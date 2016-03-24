@@ -24,9 +24,6 @@ export const setTokens = accessToken => dispatch => {
     const token = accessToken.split('=')[1].split('&')[0]
     localStorage.setItem(SPOTIFY_TOKEN_KEY, token)
     spotifyApi.setAccessToken(token)
-  } else {
-    // TODO: Show an error
-    console.warn('tokenState does not match')
   }
 }
 
@@ -36,10 +33,10 @@ export const loginUser = () => dispatch => {
   const scope = 'user-read-private user-read-email'
   let url = 'https://accounts.spotify.com/authorize'
       url += '?response_type=token'
-      url += '&client_id=' + encodeURIComponent(SPOTIFY_CLIENT_ID)
-      url += '&scope=' + encodeURIComponent(scope)
-      url += '&redirect_uri=' + encodeURIComponent(REDIRECT_URI)
-      url += '&state=' + encodeURIComponent(state)
+      url += `&client_id=${encodeURIComponent(SPOTIFY_CLIENT_ID)}`
+      url += `&scope=${encodeURIComponent(scope)}`
+      url += `&redirect_uri=${encodeURIComponent(REDIRECT_URI)}`
+      url += `&state=${encodeURIComponent(state)}`
 
   window.location = url
 }

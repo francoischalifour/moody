@@ -4,27 +4,31 @@ import { connect } from 'react-redux'
 import { API_MOODS } from '../actions/api'
 import { getPlaylists } from '../actions/playlists'
 
-import SidebarContainer from '../containers/SidebarContainer'
+import Sidebar from '../components/Sidebar'
 import Playlist from '../components/Playlist'
 
 class PlaylistContainer extends Component {
   constructor(props) {
     super(props)
+
+    const {
+      routeParams
+    } = this.props
+
     this.moods = API_MOODS.map(mood => mood.toLowerCase())
+    this.name = routeParams.name.toLowerCase()
   }
 
   componentDidMount() {
     const {
-      dispatch,
-      routeParams
+      dispatch
     } = this.props
 
-    dispatch(getPlaylists(routeParams.name.toLowerCase()))
+    dispatch(getPlaylists(this.name))
   }
 
   render() {
     const {
-      routeParams,
       playlists
     } = this.props
 
@@ -33,13 +37,13 @@ class PlaylistContainer extends Component {
       isComplete
     } = playlists
 
-    if (this.moods.includes(routeParams.name)) {
-      document.body.className = routeParams.name
+    if (this.moods.includes(this.name)) {
+      document.body.className = this.name
 
       if (!isComplete) {
         return (
           <div>
-            <SidebarContainer/>
+            <Sidebar />
 
             <div className="moody-hero">
               <p className="moody-hero__subtitle">Loading...</p>
@@ -54,10 +58,10 @@ class PlaylistContainer extends Component {
 
         return (
           <div>
-            <SidebarContainer/>
+            <Sidebar />
 
             <Playlist
-              name={routeParams.name}
+              name={this.name}
               playlist={playlistURI}
               cover={playlistCover}
             />
@@ -68,24 +72,23 @@ class PlaylistContainer extends Component {
 
     return (
       <div>
-        <SidebarContainer/>
+        <Sidebar />
 
         <div className="moody-hero">
-          <p className="moody-hero__subtitle">This playlist doesn't exist.</p>
+          <p className="moody-hero__subtitle">
+            This playlist doesn't exist.
+          </p>
         </div>
       </div>
     )
   }
 }
 
-function mapStateToProps(state) {
-  const playlistsState = state.playlists
-  const tracksState = state.tracks
-
+function select(state) {
   return {
-    playlists: playlistsState,
-    tracks: tracksState
+    playlists: state.playlists,
+    tracks: state.tracks
   }
 }
 
-export default connect(mapStateToProps)(PlaylistContainer)
+export default connect(select)(PlaylistContainer)
