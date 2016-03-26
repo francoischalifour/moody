@@ -27,8 +27,7 @@ export default function userReducer(state = initialState, action) {
         isComplete: true,
         user
       })
-
-    default:
-      return state
   }
+
+  return state
 }

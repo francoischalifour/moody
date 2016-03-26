@@ -22,7 +22,7 @@ class UserContainer extends Component {
   }
 
   render() {
-    if (!localStorage[SPOTIFY_TOKEN_KEY]) {
+    if (!localStorage.getItem(SPOTIFY_TOKEN_KEY)) {
       return (
         <div>
           <Sidebar />
@@ -44,7 +44,7 @@ class UserContainer extends Component {
       )
     }
 
-    const username = localStorage[USER_KEY]
+    const username = localStorage.getItem(USER_KEY)
 
     return (
       <div>

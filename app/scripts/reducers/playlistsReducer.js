@@ -45,8 +45,7 @@ export default function playlistsReducer(state = initialState, action) {
         isComplete: true,
         tracks
       })
-
-    default:
-      return state
   }
+
+  return state
 }

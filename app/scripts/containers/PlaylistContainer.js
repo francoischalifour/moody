@@ -33,7 +33,6 @@ class PlaylistContainer extends Component {
     } = this.props
 
     const {
-      isFetching,
       isComplete
     } = playlists
 

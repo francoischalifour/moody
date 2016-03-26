@@ -20,7 +20,7 @@ export const setTokens = accessToken => dispatch => {
 
   const tokenState = accessToken.split('state=')[1].split('?')[0]
 
-  if (tokenState === localStorage[STATE_KEY]) {
+  if (tokenState === localStorage.getItem(STATE_KEY)) {
     const token = accessToken.split('=')[1].split('&')[0]
     localStorage.setItem(SPOTIFY_TOKEN_KEY, token)
     spotifyApi.setAccessToken(token)

@@ -35,14 +35,13 @@ class HomeContainer extends Component {
       isComplete
     } = user
 
-    let username = 'stranger'
     let notification = null
 
     if (isComplete && routeParams.splat) {
-      username = user.user.display_name || user.user.uri.split(':')[2]
+      const username = user.user.display_name || user.user.uri.split(':')[2]
       localStorage.setItem(USER_KEY, username)
       notification = <Notification message="Welcome to Moody, [data]!" data={username} />
-    } else if (isComplete && !localStorage[SPOTIFY_TOKEN_KEY]) {
+    } else if (isComplete && !localStorage.getItem(SPOTIFY_TOKEN_KEY)) {
       notification = <Notification message="See you soon!" />
     }
 
@@ -53,7 +52,7 @@ class HomeContainer extends Component {
         <div className="moody-hero">
           <h1 className="moody-hero__title">Moody</h1>
           <p className="moody-hero__subtitle">
-            Find the perfect music for you mood.
+            Find the perfect music for your mood.
           </p>
 
           <MoodBoxes />
