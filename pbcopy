@@ -1,0 +1,771 @@
+{
+  "playlists" : {
+    "href" : "https://api.spotify.com/v1/search?query=sadness&offset=0&limit=20&type=playlist",
+    "items" : [ {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/lovsethgirl/playlist/5xV6rLSQeIVchJVPT9H7sX"
+      },
+      "href" : "https://api.spotify.com/v1/users/lovsethgirl/playlists/5xV6rLSQeIVchJVPT9H7sX",
+      "id" : "5xV6rLSQeIVchJVPT9H7sX",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/72d5bd1ecd38f261de6b7987283f35cd13d02fbd431f5d17450726d5f75435e272ee74834dbbed44b83fc7f2a6ebc254e797f877396d5c57cf6bd36e683cf6110e6763bd8fa1945ed4d99e8d19176bf8",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/72d5bd1ecd38f261de6b7987283f35cd13d02fbd431f5d17450726d5f75435e272ee74834dbbed44b83fc7f2a6ebc254e797f877396d5c57cf6bd36e683cf6110e6763bd8fa1945ed4d99e8d19176bf8",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/72d5bd1ecd38f261de6b7987283f35cd13d02fbd431f5d17450726d5f75435e272ee74834dbbed44b83fc7f2a6ebc254e797f877396d5c57cf6bd36e683cf6110e6763bd8fa1945ed4d99e8d19176bf8",
+        "width" : 60
+      } ],
+      "name" : "Sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/lovsethgirl"
+        },
+        "href" : "https://api.spotify.com/v1/users/lovsethgirl",
+        "id" : "lovsethgirl",
+        "type" : "user",
+        "uri" : "spotify:user:lovsethgirl"
+      },
+      "public" : null,
+      "snapshot_id" : "tRTsmJqDplA0eksQGlunVwJuWPzXQfR0vQxzOH+k/i6hwZaYV/Go7eqlJGxETCja",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/lovsethgirl/playlists/5xV6rLSQeIVchJVPT9H7sX/tracks",
+        "total" : 188
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:lovsethgirl:playlist:5xV6rLSQeIVchJVPT9H7sX"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/doddleoddle/playlist/6HqkpSVL58RuH1lczr8yVz"
+      },
+      "href" : "https://api.spotify.com/v1/users/doddleoddle/playlists/6HqkpSVL58RuH1lczr8yVz",
+      "id" : "6HqkpSVL58RuH1lczr8yVz",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/0080bec0581fe6edb83293c14d3a0d01942b179835271c10c49e4d4e477f0a20bd5973bbafaf223fff6c1f1b6b4d365787bc2fb9f1bcd2f8dff0b59ee6f4b10d325a5dc4db62fd1624e3e0a87b935379",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/0080bec0581fe6edb83293c14d3a0d01942b179835271c10c49e4d4e477f0a20bd5973bbafaf223fff6c1f1b6b4d365787bc2fb9f1bcd2f8dff0b59ee6f4b10d325a5dc4db62fd1624e3e0a87b935379",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/0080bec0581fe6edb83293c14d3a0d01942b179835271c10c49e4d4e477f0a20bd5973bbafaf223fff6c1f1b6b4d365787bc2fb9f1bcd2f8dff0b59ee6f4b10d325a5dc4db62fd1624e3e0a87b935379",
+        "width" : 60
+      } ],
+      "name" : "Sadness 😔",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/doddleoddle"
+        },
+        "href" : "https://api.spotify.com/v1/users/doddleoddle",
+        "id" : "doddleoddle",
+        "type" : "user",
+        "uri" : "spotify:user:doddleoddle"
+      },
+      "public" : null,
+      "snapshot_id" : "CyJ43PjXmzUY75vSW8Ir/+s9HOLC43wDYbVgcA+Da+HsCc3KmYZlxqS+aP5ku57J",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/doddleoddle/playlists/6HqkpSVL58RuH1lczr8yVz/tracks",
+        "total" : 33
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:doddleoddle:playlist:6HqkpSVL58RuH1lczr8yVz"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/mercedes98/playlist/0VHCvVAs7L1DULqVmlWm8s"
+      },
+      "href" : "https://api.spotify.com/v1/users/mercedes98/playlists/0VHCvVAs7L1DULqVmlWm8s",
+      "id" : "0VHCvVAs7L1DULqVmlWm8s",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/dc750801adbdf1d896dd75feae4dfb29447a757ecbf982ea1b9bc4aa9895d647ff3956098b214d81f1d8b65faccb92c4451c223d7773a6b55fd1d20a42880b7d81d3e939b7f8e1d611017a69559e1132",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/dc750801adbdf1d896dd75feae4dfb29447a757ecbf982ea1b9bc4aa9895d647ff3956098b214d81f1d8b65faccb92c4451c223d7773a6b55fd1d20a42880b7d81d3e939b7f8e1d611017a69559e1132",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/dc750801adbdf1d896dd75feae4dfb29447a757ecbf982ea1b9bc4aa9895d647ff3956098b214d81f1d8b65faccb92c4451c223d7773a6b55fd1d20a42880b7d81d3e939b7f8e1d611017a69559e1132",
+        "width" : 60
+      } ],
+      "name" : "SADNESS",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/mercedes98"
+        },
+        "href" : "https://api.spotify.com/v1/users/mercedes98",
+        "id" : "mercedes98",
+        "type" : "user",
+        "uri" : "spotify:user:mercedes98"
+      },
+      "public" : null,
+      "snapshot_id" : "YeRAjxTHd2ycARP5RoTSpxnv1iz2nWeRPrUXGBQN/XfgAQMcqCh9HQj71ZJNIJp+",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/mercedes98/playlists/0VHCvVAs7L1DULqVmlWm8s/tracks",
+        "total" : 196
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:mercedes98:playlist:0VHCvVAs7L1DULqVmlWm8s"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/calfreezy/playlist/1a7ZGpS7Ugpees7e7eP6My"
+      },
+      "href" : "https://api.spotify.com/v1/users/calfreezy/playlists/1a7ZGpS7Ugpees7e7eP6My",
+      "id" : "1a7ZGpS7Ugpees7e7eP6My",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/eb9db87657b12177e420b4f37ec322736c133c92c0e3250f4ac8578250cd9be31d248d30f5fb2cb464e57b9a4af780d226ab54bc5227dc84aa694b9ff66195f98d32ffb0f1fcca0ea9e69e2794ec6742",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/eb9db87657b12177e420b4f37ec322736c133c92c0e3250f4ac8578250cd9be31d248d30f5fb2cb464e57b9a4af780d226ab54bc5227dc84aa694b9ff66195f98d32ffb0f1fcca0ea9e69e2794ec6742",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/eb9db87657b12177e420b4f37ec322736c133c92c0e3250f4ac8578250cd9be31d248d30f5fb2cb464e57b9a4af780d226ab54bc5227dc84aa694b9ff66195f98d32ffb0f1fcca0ea9e69e2794ec6742",
+        "width" : 60
+      } ],
+      "name" : "Sadness (WARNING: VERY SAD)",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/calfreezy"
+        },
+        "href" : "https://api.spotify.com/v1/users/calfreezy",
+        "id" : "calfreezy",
+        "type" : "user",
+        "uri" : "spotify:user:calfreezy"
+      },
+      "public" : null,
+      "snapshot_id" : "dW310ZMYfbLGfUZ7KJhO80Yx2usNotwHXZpqV7nBM2Lvug2GvtbaEXM22CnewfRC",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/calfreezy/playlists/1a7ZGpS7Ugpees7e7eP6My/tracks",
+        "total" : 39
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:calfreezy:playlist:1a7ZGpS7Ugpees7e7eP6My"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/thorormr/playlist/5vc6IyLBcybfrMInVQ4cNd"
+      },
+      "href" : "https://api.spotify.com/v1/users/thorormr/playlists/5vc6IyLBcybfrMInVQ4cNd",
+      "id" : "5vc6IyLBcybfrMInVQ4cNd",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/40a2090eeb8bbd5c75a721456beaacd820dc29b47958226165ab4d6ab8313f784dfd08559a950aff0db69af331724a306640c40325e9cfdfe5a6f737affc48d08710d579d138dc4f2cedf74d59084fc7",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/40a2090eeb8bbd5c75a721456beaacd820dc29b47958226165ab4d6ab8313f784dfd08559a950aff0db69af331724a306640c40325e9cfdfe5a6f737affc48d08710d579d138dc4f2cedf74d59084fc7",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/40a2090eeb8bbd5c75a721456beaacd820dc29b47958226165ab4d6ab8313f784dfd08559a950aff0db69af331724a306640c40325e9cfdfe5a6f737affc48d08710d579d138dc4f2cedf74d59084fc7",
+        "width" : 60
+      } ],
+      "name" : "Sadness(songs that move me)",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/thorormr"
+        },
+        "href" : "https://api.spotify.com/v1/users/thorormr",
+        "id" : "thorormr",
+        "type" : "user",
+        "uri" : "spotify:user:thorormr"
+      },
+      "public" : null,
+      "snapshot_id" : "fJCIO3l7gsr+G2tQAtHU8k13Ych8FlnX6qI5mIEayHaRnfl/lMBVAocx7ybwj6D0",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/thorormr/playlists/5vc6IyLBcybfrMInVQ4cNd/tracks",
+        "total" : 392
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:thorormr:playlist:5vc6IyLBcybfrMInVQ4cNd"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/indiexindie/playlist/6tw3MRNJ5EovTbsnjKJZI6"
+      },
+      "href" : "https://api.spotify.com/v1/users/indiexindie/playlists/6tw3MRNJ5EovTbsnjKJZI6",
+      "id" : "6tw3MRNJ5EovTbsnjKJZI6",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/18bddef1d126d96c8edd89f4720948bf11d6006984ff44164f5417b11dc80213c11edaa7873e2343afd3acff8667727320318741201ef412a20ca4736ba50b26867613b100281669ff1a917c5a020534",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/18bddef1d126d96c8edd89f4720948bf11d6006984ff44164f5417b11dc80213c11edaa7873e2343afd3acff8667727320318741201ef412a20ca4736ba50b26867613b100281669ff1a917c5a020534",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/18bddef1d126d96c8edd89f4720948bf11d6006984ff44164f5417b11dc80213c11edaa7873e2343afd3acff8667727320318741201ef412a20ca4736ba50b26867613b100281669ff1a917c5a020534",
+        "width" : 60
+      } ],
+      "name" : "INDIE X INDIE - SADNESS",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/indiexindie"
+        },
+        "href" : "https://api.spotify.com/v1/users/indiexindie",
+        "id" : "indiexindie",
+        "type" : "user",
+        "uri" : "spotify:user:indiexindie"
+      },
+      "public" : null,
+      "snapshot_id" : "7kj6NVumZaD53qkdVV0EwVWyQBI6BHS3CNkotd6vWNov6AWEmEsymLhfPuZ3txYM",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/indiexindie/playlists/6tw3MRNJ5EovTbsnjKJZI6/tracks",
+        "total" : 41
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:indiexindie:playlist:6tw3MRNJ5EovTbsnjKJZI6"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/1285274467/playlist/4koWFdhDuV91OFKPCjYnI7"
+      },
+      "href" : "https://api.spotify.com/v1/users/1285274467/playlists/4koWFdhDuV91OFKPCjYnI7",
+      "id" : "4koWFdhDuV91OFKPCjYnI7",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/f2b58a2ab70beb52d16cc4fc182e019de1b429475e97dc609ab0f2c328a0f8939bca57003267e6fe04a02f3e01bdd78470ca8d596f5a06e87c35fb2d249a1fc127bf96707058af45d7de675b5e189849",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/f2b58a2ab70beb52d16cc4fc182e019de1b429475e97dc609ab0f2c328a0f8939bca57003267e6fe04a02f3e01bdd78470ca8d596f5a06e87c35fb2d249a1fc127bf96707058af45d7de675b5e189849",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/f2b58a2ab70beb52d16cc4fc182e019de1b429475e97dc609ab0f2c328a0f8939bca57003267e6fe04a02f3e01bdd78470ca8d596f5a06e87c35fb2d249a1fc127bf96707058af45d7de675b5e189849",
+        "width" : 60
+      } ],
+      "name" : "Carlos Sadness ",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/1285274467"
+        },
+        "href" : "https://api.spotify.com/v1/users/1285274467",
+        "id" : "1285274467",
+        "type" : "user",
+        "uri" : "spotify:user:1285274467"
+      },
+      "public" : null,
+      "snapshot_id" : "3gORJwWfemDB58vGjQSiiaAA355CcQss0gKPa+wup9M18gG99PackyR5/SmZqPaQ",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/1285274467/playlists/4koWFdhDuV91OFKPCjYnI7/tracks",
+        "total" : 48
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:1285274467:playlist:4koWFdhDuV91OFKPCjYnI7"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/jenna323.m/playlist/2lEOvo8gpoVRqILLPnPOFL"
+      },
+      "href" : "https://api.spotify.com/v1/users/jenna323.m/playlists/2lEOvo8gpoVRqILLPnPOFL",
+      "id" : "2lEOvo8gpoVRqILLPnPOFL",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/2f8b43bd63f73b34e33e572a112b61830de0570a2f4e70309ae84e51568476b9d71a28ce63996bca88e37930393a33bf292e57ea241babb9e920e4624ef3da23d8d51a247e7a701c6a20b29d0be25348",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/2f8b43bd63f73b34e33e572a112b61830de0570a2f4e70309ae84e51568476b9d71a28ce63996bca88e37930393a33bf292e57ea241babb9e920e4624ef3da23d8d51a247e7a701c6a20b29d0be25348",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/2f8b43bd63f73b34e33e572a112b61830de0570a2f4e70309ae84e51568476b9d71a28ce63996bca88e37930393a33bf292e57ea241babb9e920e4624ef3da23d8d51a247e7a701c6a20b29d0be25348",
+        "width" : 60
+      } ],
+      "name" : "Songs about pain, selfharm, and sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/jenna323.m"
+        },
+        "href" : "https://api.spotify.com/v1/users/jenna323.m",
+        "id" : "jenna323.m",
+        "type" : "user",
+        "uri" : "spotify:user:jenna323.m"
+      },
+      "public" : null,
+      "snapshot_id" : "OpYnM9HcQ75lw6Cfp+gFufsGY6Cj/txGtLYrPmGLRQEMnlGzRzxIGvQ813l3MnFf",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/jenna323.m/playlists/2lEOvo8gpoVRqILLPnPOFL/tracks",
+        "total" : 131
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:jenna323.m:playlist:2lEOvo8gpoVRqILLPnPOFL"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/sacaah/playlist/5MII5c344O99gOOMZd4Zmy"
+      },
+      "href" : "https://api.spotify.com/v1/users/sacaah/playlists/5MII5c344O99gOOMZd4Zmy",
+      "id" : "5MII5c344O99gOOMZd4Zmy",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/5fc0f1570be39819c2b24801ab0e2f69d187a4db368d6be3e17e8d46c5da11a53d3815b6ba857badd5ea8eb149c722f90c750812280cfd42b535dae0b38fe5a2a02ea4643f4c15a75601fc92f41f62e9",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/5fc0f1570be39819c2b24801ab0e2f69d187a4db368d6be3e17e8d46c5da11a53d3815b6ba857badd5ea8eb149c722f90c750812280cfd42b535dae0b38fe5a2a02ea4643f4c15a75601fc92f41f62e9",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/5fc0f1570be39819c2b24801ab0e2f69d187a4db368d6be3e17e8d46c5da11a53d3815b6ba857badd5ea8eb149c722f90c750812280cfd42b535dae0b38fe5a2a02ea4643f4c15a75601fc92f41f62e9",
+        "width" : 60
+      } ],
+      "name" : "♡ summertime sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/sacaah"
+        },
+        "href" : "https://api.spotify.com/v1/users/sacaah",
+        "id" : "sacaah",
+        "type" : "user",
+        "uri" : "spotify:user:sacaah"
+      },
+      "public" : null,
+      "snapshot_id" : "QWD5yRgO9LBtVtK3/tXX9e5852RnmR1zza96DZW/cPeuWweuK51eDkxXd/xY+nE/",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/sacaah/playlists/5MII5c344O99gOOMZd4Zmy/tracks",
+        "total" : 130
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:sacaah:playlist:5MII5c344O99gOOMZd4Zmy"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/113433630/playlist/2c7RA8xX70J2fSn7hjd16I"
+      },
+      "href" : "https://api.spotify.com/v1/users/113433630/playlists/2c7RA8xX70J2fSn7hjd16I",
+      "id" : "2c7RA8xX70J2fSn7hjd16I",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/dc1e16bcf2e3c0e6f3199deea64280d6bcdaae82f2b58a2ab70beb52d16cc4fc182e019de1b429475e97dc609ab0f2c328a0f8939bca57003267e6fedcd82e90ee6ab75b3fb85c3ed8be37fe22f262e6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/dc1e16bcf2e3c0e6f3199deea64280d6bcdaae82f2b58a2ab70beb52d16cc4fc182e019de1b429475e97dc609ab0f2c328a0f8939bca57003267e6fedcd82e90ee6ab75b3fb85c3ed8be37fe22f262e6",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/dc1e16bcf2e3c0e6f3199deea64280d6bcdaae82f2b58a2ab70beb52d16cc4fc182e019de1b429475e97dc609ab0f2c328a0f8939bca57003267e6fedcd82e90ee6ab75b3fb85c3ed8be37fe22f262e6",
+        "width" : 60
+      } ],
+      "name" : "Carlos Sadness, Izal, Supersubmarina & Vetusta Morla.",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/113433630"
+        },
+        "href" : "https://api.spotify.com/v1/users/113433630",
+        "id" : "113433630",
+        "type" : "user",
+        "uri" : "spotify:user:113433630"
+      },
+      "public" : null,
+      "snapshot_id" : "oJMli/ZZLwV4nQVS4tPfEP1P35Lyk7hSCDKfWWxxTGeFdfpcU3fJ283JFJxvxPTM",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/113433630/playlists/2c7RA8xX70J2fSn7hjd16I/tracks",
+        "total" : 146
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:113433630:playlist:2c7RA8xX70J2fSn7hjd16I"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/shiipz4you/playlist/4huZ0yiaIhdN8Zskf89JTI"
+      },
+      "href" : "https://api.spotify.com/v1/users/shiipz4you/playlists/4huZ0yiaIhdN8Zskf89JTI",
+      "id" : "4huZ0yiaIhdN8Zskf89JTI",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/8d83645181b6a4ec379b76e994324650668911eb61d581b2a300205ffac6f871696644aaba88e8554cee297b936e94c28aafc6f7da180ff380a26b7c476e3327f857f0a6cc4bba75b41c86fea2e69cde",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/8d83645181b6a4ec379b76e994324650668911eb61d581b2a300205ffac6f871696644aaba88e8554cee297b936e94c28aafc6f7da180ff380a26b7c476e3327f857f0a6cc4bba75b41c86fea2e69cde",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/8d83645181b6a4ec379b76e994324650668911eb61d581b2a300205ffac6f871696644aaba88e8554cee297b936e94c28aafc6f7da180ff380a26b7c476e3327f857f0a6cc4bba75b41c86fea2e69cde",
+        "width" : 60
+      } ],
+      "name" : "Summertime Sadness - Remix – Look Up to the Billboard",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/shiipz4you"
+        },
+        "href" : "https://api.spotify.com/v1/users/shiipz4you",
+        "id" : "shiipz4you",
+        "type" : "user",
+        "uri" : "spotify:user:shiipz4you"
+      },
+      "public" : null,
+      "snapshot_id" : "EA658tPKW+uxtTW8rAHb5p/wLEQnu9YjInf3waUm095yoynLfoCwfVY+yhoTNb4H",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/shiipz4you/playlists/4huZ0yiaIhdN8Zskf89JTI/tracks",
+        "total" : 48
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:shiipz4you:playlist:4huZ0yiaIhdN8Zskf89JTI"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/teeusak/playlist/3QYUnJh9CzcQTj01aNMm6q"
+      },
+      "href" : "https://api.spotify.com/v1/users/teeusak/playlists/3QYUnJh9CzcQTj01aNMm6q",
+      "id" : "3QYUnJh9CzcQTj01aNMm6q",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/474fc080abc6c1f4abed666ea3ea0d8b83dd4c7db39e6141d1459e2ec0e658f2e53f00601503d7cee29b9a288d12719ee6a762f5ddc5ad78b23460506adb9805c31731ec617735b2620e8b956890ba89",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/474fc080abc6c1f4abed666ea3ea0d8b83dd4c7db39e6141d1459e2ec0e658f2e53f00601503d7cee29b9a288d12719ee6a762f5ddc5ad78b23460506adb9805c31731ec617735b2620e8b956890ba89",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/474fc080abc6c1f4abed666ea3ea0d8b83dd4c7db39e6141d1459e2ec0e658f2e53f00601503d7cee29b9a288d12719ee6a762f5ddc5ad78b23460506adb9805c31731ec617735b2620e8b956890ba89",
+        "width" : 60
+      } ],
+      "name" : "sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/teeusak"
+        },
+        "href" : "https://api.spotify.com/v1/users/teeusak",
+        "id" : "teeusak",
+        "type" : "user",
+        "uri" : "spotify:user:teeusak"
+      },
+      "public" : null,
+      "snapshot_id" : "ldw/GUAvI/p2+yipDqD/z71jU4hWkmfw1jO01Z+b9tLhZSkpoAilUyJfCmch2WO8",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/teeusak/playlists/3QYUnJh9CzcQTj01aNMm6q/tracks",
+        "total" : 108
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:teeusak:playlist:3QYUnJh9CzcQTj01aNMm6q"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/11139726474/playlist/4JblU0Pbbf8o7eqGqqQQs1"
+      },
+      "href" : "https://api.spotify.com/v1/users/11139726474/playlists/4JblU0Pbbf8o7eqGqqQQs1",
+      "id" : "4JblU0Pbbf8o7eqGqqQQs1",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/398e274e8b7cf908636f14af46e224e696196f9d65bcfc33c9a8a84c653bfd7ceb6afdcd71b9cf2b25881ee85e5a66f396e58128424a17f206571f3851418933e0e45577c9bb1bbf6d263aeb465cfd2e",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/398e274e8b7cf908636f14af46e224e696196f9d65bcfc33c9a8a84c653bfd7ceb6afdcd71b9cf2b25881ee85e5a66f396e58128424a17f206571f3851418933e0e45577c9bb1bbf6d263aeb465cfd2e",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/398e274e8b7cf908636f14af46e224e696196f9d65bcfc33c9a8a84c653bfd7ceb6afdcd71b9cf2b25881ee85e5a66f396e58128424a17f206571f3851418933e0e45577c9bb1bbf6d263aeb465cfd2e",
+        "width" : 60
+      } ],
+      "name" : "The Kind of Sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/11139726474"
+        },
+        "href" : "https://api.spotify.com/v1/users/11139726474",
+        "id" : "11139726474",
+        "type" : "user",
+        "uri" : "spotify:user:11139726474"
+      },
+      "public" : null,
+      "snapshot_id" : "9xAjEcXCEL/dX/60+oOhuHShyPkkYtzdVDiXmY7vDSDW0uHHGJlcVitAus3rUTLA",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/11139726474/playlists/4JblU0Pbbf8o7eqGqqQQs1/tracks",
+        "total" : 21
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:11139726474:playlist:4JblU0Pbbf8o7eqGqqQQs1"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/12156623938/playlist/2nfD8EPkZX9BJ8gY8E26KA"
+      },
+      "href" : "https://api.spotify.com/v1/users/12156623938/playlists/2nfD8EPkZX9BJ8gY8E26KA",
+      "id" : "2nfD8EPkZX9BJ8gY8E26KA",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/d7231272e85ba73914a6f6288196bb8b1d68d3b1dfed810f86b9b7b6ef72a1734ead91804d13de85fabbbfd4529601362771925b611f5014b936062438c764b5e248122ca0217803a008182c20919a0c",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/d7231272e85ba73914a6f6288196bb8b1d68d3b1dfed810f86b9b7b6ef72a1734ead91804d13de85fabbbfd4529601362771925b611f5014b936062438c764b5e248122ca0217803a008182c20919a0c",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/d7231272e85ba73914a6f6288196bb8b1d68d3b1dfed810f86b9b7b6ef72a1734ead91804d13de85fabbbfd4529601362771925b611f5014b936062438c764b5e248122ca0217803a008182c20919a0c",
+        "width" : 60
+      } ],
+      "name" : "Sadness And Sorrow",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/12156623938"
+        },
+        "href" : "https://api.spotify.com/v1/users/12156623938",
+        "id" : "12156623938",
+        "type" : "user",
+        "uri" : "spotify:user:12156623938"
+      },
+      "public" : null,
+      "snapshot_id" : "NHA+npEBStCIHFNBKV9cBbhkTgnoPK2FTzxOhQB73l3xbNWvSXHRAnlkhEK2VM6X",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/12156623938/playlists/2nfD8EPkZX9BJ8gY8E26KA/tracks",
+        "total" : 83
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:12156623938:playlist:2nfD8EPkZX9BJ8gY8E26KA"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/22uwiyi2iobi5bp4hk4enofvy/playlist/492nsTFakH0ixy51f48Yt4"
+      },
+      "href" : "https://api.spotify.com/v1/users/22uwiyi2iobi5bp4hk4enofvy/playlists/492nsTFakH0ixy51f48Yt4",
+      "id" : "492nsTFakH0ixy51f48Yt4",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/70d8660d8b802835a280ce75799d30db262f7094dcce679b1f12fd328cf9aa52618868c169768ce8ce2cb283df41c592e72df1900558d8af97445aa6bb79eb3bc418e5f32abda437c8fe79eb5aa9b060",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/70d8660d8b802835a280ce75799d30db262f7094dcce679b1f12fd328cf9aa52618868c169768ce8ce2cb283df41c592e72df1900558d8af97445aa6bb79eb3bc418e5f32abda437c8fe79eb5aa9b060",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/70d8660d8b802835a280ce75799d30db262f7094dcce679b1f12fd328cf9aa52618868c169768ce8ce2cb283df41c592e72df1900558d8af97445aa6bb79eb3bc418e5f32abda437c8fe79eb5aa9b060",
+        "width" : 60
+      } ],
+      "name" : "All of my sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/22uwiyi2iobi5bp4hk4enofvy"
+        },
+        "href" : "https://api.spotify.com/v1/users/22uwiyi2iobi5bp4hk4enofvy",
+        "id" : "22uwiyi2iobi5bp4hk4enofvy",
+        "type" : "user",
+        "uri" : "spotify:user:22uwiyi2iobi5bp4hk4enofvy"
+      },
+      "public" : null,
+      "snapshot_id" : "mOl80NvjoCPiBF6dokCH88iEg17s6T2PtgLL4+JQ2SNtnYolqH+BAMem0ktnvJ23",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/22uwiyi2iobi5bp4hk4enofvy/playlists/492nsTFakH0ixy51f48Yt4/tracks",
+        "total" : 111
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:22uwiyi2iobi5bp4hk4enofvy:playlist:492nsTFakH0ixy51f48Yt4"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/12150853681/playlist/6vXmzd2os6RZGgba0nWn7U"
+      },
+      "href" : "https://api.spotify.com/v1/users/12150853681/playlists/6vXmzd2os6RZGgba0nWn7U",
+      "id" : "6vXmzd2os6RZGgba0nWn7U",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/876aaf53edd921023e71731bd92d5272a86b38aed7f2a8e1ce695d531ff17787a1019c2e3cd06bf15ddbfec8fb2c4fffa9876cbd44de024ce52a1f06d1ab67c72b986a58e0b7a71c7b1a0165a7b723f6",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/876aaf53edd921023e71731bd92d5272a86b38aed7f2a8e1ce695d531ff17787a1019c2e3cd06bf15ddbfec8fb2c4fffa9876cbd44de024ce52a1f06d1ab67c72b986a58e0b7a71c7b1a0165a7b723f6",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/876aaf53edd921023e71731bd92d5272a86b38aed7f2a8e1ce695d531ff17787a1019c2e3cd06bf15ddbfec8fb2c4fffa9876cbd44de024ce52a1f06d1ab67c72b986a58e0b7a71c7b1a0165a7b723f6",
+        "width" : 60
+      } ],
+      "name" : "Sadness is a blessing",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/12150853681"
+        },
+        "href" : "https://api.spotify.com/v1/users/12150853681",
+        "id" : "12150853681",
+        "type" : "user",
+        "uri" : "spotify:user:12150853681"
+      },
+      "public" : null,
+      "snapshot_id" : "s6Bs7wJWCFarZRz/crB2nv6sv3XCuOS+Qqe0r25PX759eT1BAQYwms05+a361jA/",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/12150853681/playlists/6vXmzd2os6RZGgba0nWn7U/tracks",
+        "total" : 184
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:12150853681:playlist:6vXmzd2os6RZGgba0nWn7U"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/hannahxxx1/playlist/7xw493xztEHO7nTPamPh9J"
+      },
+      "href" : "https://api.spotify.com/v1/users/hannahxxx1/playlists/7xw493xztEHO7nTPamPh9J",
+      "id" : "7xw493xztEHO7nTPamPh9J",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/85f4fc09d29aeb9603aa3603c2b79414a5ad4613778f405ddf633124cdd6cc007808a071e8b38b42e1a2405ed5f06e61b74037f8910b91e8678d522e2b0588000a9a8ee920ee0835cfb80115487a8784",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/85f4fc09d29aeb9603aa3603c2b79414a5ad4613778f405ddf633124cdd6cc007808a071e8b38b42e1a2405ed5f06e61b74037f8910b91e8678d522e2b0588000a9a8ee920ee0835cfb80115487a8784",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/85f4fc09d29aeb9603aa3603c2b79414a5ad4613778f405ddf633124cdd6cc007808a071e8b38b42e1a2405ed5f06e61b74037f8910b91e8678d522e2b0588000a9a8ee920ee0835cfb80115487a8784",
+        "width" : 60
+      } ],
+      "name" : "sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/hannahxxx1"
+        },
+        "href" : "https://api.spotify.com/v1/users/hannahxxx1",
+        "id" : "hannahxxx1",
+        "type" : "user",
+        "uri" : "spotify:user:hannahxxx1"
+      },
+      "public" : null,
+      "snapshot_id" : "otioiNT3j4WKXM/1A68DnklyNCjIkBQDzDFDK7pwkst2VQblu+wFJt7IalQ9mYBR",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/hannahxxx1/playlists/7xw493xztEHO7nTPamPh9J/tracks",
+        "total" : 159
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:hannahxxx1:playlist:7xw493xztEHO7nTPamPh9J"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/22h6wya32kn2vpqpg4holw3ky/playlist/5khH2ijtshDcYcFKvHzLOC"
+      },
+      "href" : "https://api.spotify.com/v1/users/22h6wya32kn2vpqpg4holw3ky/playlists/5khH2ijtshDcYcFKvHzLOC",
+      "id" : "5khH2ijtshDcYcFKvHzLOC",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/797009754c30847254b48de483f256258d90df7fb208736375332759788613f510f2c12d3de3a182a1abc10f4c78f1c35b12f049fe7aff7953d608e8150a14be04d8af5c99df71f86ffac0ecb49b6330",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/797009754c30847254b48de483f256258d90df7fb208736375332759788613f510f2c12d3de3a182a1abc10f4c78f1c35b12f049fe7aff7953d608e8150a14be04d8af5c99df71f86ffac0ecb49b6330",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/797009754c30847254b48de483f256258d90df7fb208736375332759788613f510f2c12d3de3a182a1abc10f4c78f1c35b12f049fe7aff7953d608e8150a14be04d8af5c99df71f86ffac0ecb49b6330",
+        "width" : 60
+      } ],
+      "name" : "Sadness is a happy thing",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/22h6wya32kn2vpqpg4holw3ky"
+        },
+        "href" : "https://api.spotify.com/v1/users/22h6wya32kn2vpqpg4holw3ky",
+        "id" : "22h6wya32kn2vpqpg4holw3ky",
+        "type" : "user",
+        "uri" : "spotify:user:22h6wya32kn2vpqpg4holw3ky"
+      },
+      "public" : null,
+      "snapshot_id" : "thzoSw+DdSkZv/p1CDJrwaHKqXNDiBpw+Ds2kNz3DiqMZbXIdaullfv9mzmQX9dX",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/22h6wya32kn2vpqpg4holw3ky/playlists/5khH2ijtshDcYcFKvHzLOC/tracks",
+        "total" : 532
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:22h6wya32kn2vpqpg4holw3ky:playlist:5khH2ijtshDcYcFKvHzLOC"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/22ey5pejra6msarywkssbgdii/playlist/5Cswi7lUVB0VcPIdfswGP1"
+      },
+      "href" : "https://api.spotify.com/v1/users/22ey5pejra6msarywkssbgdii/playlists/5Cswi7lUVB0VcPIdfswGP1",
+      "id" : "5Cswi7lUVB0VcPIdfswGP1",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/37f84cc08490eeb2a15c4ceff90476b58e006072e1baee4b37b7157afef295e6aafda15edd5b43c29bffa00ef9927bec01ebd733ae774b0cb228483b9ac9311d00491cccabce33d81e95f4be6bf0c709",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/37f84cc08490eeb2a15c4ceff90476b58e006072e1baee4b37b7157afef295e6aafda15edd5b43c29bffa00ef9927bec01ebd733ae774b0cb228483b9ac9311d00491cccabce33d81e95f4be6bf0c709",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/37f84cc08490eeb2a15c4ceff90476b58e006072e1baee4b37b7157afef295e6aafda15edd5b43c29bffa00ef9927bec01ebd733ae774b0cb228483b9ac9311d00491cccabce33d81e95f4be6bf0c709",
+        "width" : 60
+      } ],
+      "name" : "Sadness ",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/22ey5pejra6msarywkssbgdii"
+        },
+        "href" : "https://api.spotify.com/v1/users/22ey5pejra6msarywkssbgdii",
+        "id" : "22ey5pejra6msarywkssbgdii",
+        "type" : "user",
+        "uri" : "spotify:user:22ey5pejra6msarywkssbgdii"
+      },
+      "public" : null,
+      "snapshot_id" : "CwWZNK5ch+rpjOVV1Hep46iWO1te5FhKj5C68MlDQxRS5VEEoF9O00vkXBFruXJ2",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/22ey5pejra6msarywkssbgdii/playlists/5Cswi7lUVB0VcPIdfswGP1/tracks",
+        "total" : 55
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:22ey5pejra6msarywkssbgdii:playlist:5Cswi7lUVB0VcPIdfswGP1"
+    }, {
+      "collaborative" : false,
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/britaylorr/playlist/16XgFg7AQMhaZ7Fh2fMKUY"
+      },
+      "href" : "https://api.spotify.com/v1/users/britaylorr/playlists/16XgFg7AQMhaZ7Fh2fMKUY",
+      "id" : "16XgFg7AQMhaZ7Fh2fMKUY",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://mosaic.scdn.co/640/a97faf38f23e75bf6f8bdbf564259730b881f620b2ed2d2a35028a04f36d12d052361b537a351cc99124e0f485d628f502f203b0ca73b25e2129519388e37930393a33bf292e57ea241babb9e920e462",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://mosaic.scdn.co/300/a97faf38f23e75bf6f8bdbf564259730b881f620b2ed2d2a35028a04f36d12d052361b537a351cc99124e0f485d628f502f203b0ca73b25e2129519388e37930393a33bf292e57ea241babb9e920e462",
+        "width" : 300
+      }, {
+        "height" : 60,
+        "url" : "https://mosaic.scdn.co/60/a97faf38f23e75bf6f8bdbf564259730b881f620b2ed2d2a35028a04f36d12d052361b537a351cc99124e0f485d628f502f203b0ca73b25e2129519388e37930393a33bf292e57ea241babb9e920e462",
+        "width" : 60
+      } ],
+      "name" : "Suicide Sadness",
+      "owner" : {
+        "external_urls" : {
+          "spotify" : "http://open.spotify.com/user/britaylorr"
+        },
+        "href" : "https://api.spotify.com/v1/users/britaylorr",
+        "id" : "britaylorr",
+        "type" : "user",
+        "uri" : "spotify:user:britaylorr"
+      },
+      "public" : null,
+      "snapshot_id" : "A/hnTDsL781J7KMYEgaCtCLW96tnAcyhJwD2R1bRVABAqlH1r1QA3/HO4EWJ7E7v",
+      "tracks" : {
+        "href" : "https://api.spotify.com/v1/users/britaylorr/playlists/16XgFg7AQMhaZ7Fh2fMKUY/tracks",
+        "total" : 136
+      },
+      "type" : "playlist",
+      "uri" : "spotify:user:britaylorr:playlist:16XgFg7AQMhaZ7Fh2fMKUY"
+    } ],
+    "limit" : 20,
+    "next" : "https://api.spotify.com/v1/search?query=sadness&offset=20&limit=20&type=playlist",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 330
+  }
+}

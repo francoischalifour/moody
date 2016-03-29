@@ -1,7 +1,7 @@
 {
   "name": "Moody",
-  "version": "0.0.0",
-  "description": "Find the perfect music for your mood.",
+  "version": "1.0.0",
+  "description": "Music for your feelings.",
   "license": "MIT",
   "repository": "francoischalifour/moody",
   "devDependencies": {

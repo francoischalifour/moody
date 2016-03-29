@@ -52,7 +52,7 @@ class HomeContainer extends Component {
         <div className="moody-hero">
           <h1 className="moody-hero__title">Moody</h1>
           <p className="moody-hero__subtitle">
-            Find the perfect music for your mood.
+            Music for you feelings.
           </p>
 
           <MoodBoxes />
