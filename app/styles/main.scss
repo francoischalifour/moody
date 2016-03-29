@@ -8,13 +8,6 @@ body,
   height: 100%;
 }
 
-#app > div {
-  min-height: 100%;
-  @include display-flex;
-  @include justify-content(center);
-  @include flex-direction(column);
-}
-
 body {
   font-family: $font-family;
   color: #fff;
@@ -24,6 +17,8 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   @include background-gradient(left, #403a3e, #be5869);
 
   &::after {
@@ -61,6 +56,13 @@ body {
   to {
     opacity: .6;
   }
+}
+
+#app > div {
+  min-height: 100%;
+  @include display-flex;
+  @include justify-content(center);
+  @include flex-direction(column);
 }
 
 h1, h2, h3, h4, h5, h6,
