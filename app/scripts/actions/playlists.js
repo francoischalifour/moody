@@ -20,15 +20,13 @@ const actionReceivePlaylists = playlists => {
   }
 }
 
-export const getPlaylists = playlistName => {
-  return dispatch => {
-    dispatch(actionRequestPlaylists())
+export const getPlaylists = playlistName => dispatch => {
+  dispatch(actionRequestPlaylists())
 
-    spotifyApi
-      .searchPlaylists(playlistName)
-      .then(playlists => dispatch(actionReceivePlaylists(playlists)))
-      .catch(err => console.error('Cannot load playlist: ', err))
-  }
+  spotifyApi
+    .searchPlaylists(playlistName)
+    .then(playlists => dispatch(actionReceivePlaylists(playlists)))
+    .catch(err => console.error('Cannot load playlist: ', err))
 }
 
 const actionRequestPlaylistTracks = () => {
