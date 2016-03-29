@@ -2,8 +2,6 @@ import Spotify from 'spotify-web-api-js'
 
 export const PLAYLISTS_REQUEST = 'PLAYLISTS_REQUEST'
 export const PLAYLISTS_RECEIVE = 'PLAYLISTS_RECEIVE'
-export const PLAYLIST_TRACKS_REQUEST = 'PLAYLIST_TRACKS_REQUEST'
-export const PLAYLIST_TRACKS_RECEIVE = 'PLAYLIST_TRACKS_RECEIVE'
 
 const spotifyApi = new Spotify()
 
@@ -29,23 +27,8 @@ export const getPlaylists = playlistName => dispatch => {
     .catch(err => console.error('Cannot load playlist: ', err))
 }
 
-const actionRequestPlaylistTracks = () => {
-  return {
-    type: PLAYLIST_TRACKS_REQUEST
-  }
-}
-
-const actionReceivePlaylistTracks = tracks => {
-  return {
-    type: PLAYLIST_TRACKS_RECEIVE,
-    tracks
-  }
-}
-
 export const getPlaylistsTrack = playlist => dispatch => {
   dispatch(actionRequestPlaylistTracks())
-
-  // TODO: get URI
 
   spotifyApi
     .getPlaylistTracks()
