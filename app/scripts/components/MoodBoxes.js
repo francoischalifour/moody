@@ -1,25 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router'
 import { API_MOODS } from '../actions/api'
 
-export default class extends Component {
-  render() {
-    return (
-      <ul className="moody-moodbox">
-        {API_MOODS.map(this.renderMood)}
-      </ul>
-    )
-  }
+const moodTemplate = (mood, index) =>
+  <Link
+    to={`playlist/${mood.toLowerCase()}`}
+    className={mood.toLowerCase()}
+    key={index}
+  >
+    <li>{mood}</li>
+  </Link>
 
-  renderMood(mood, index) {
-    return (
-      <Link
-        to={`playlist/${mood.toLowerCase()}`}
-        className={mood.toLowerCase()}
-        key={index}
-      >
-        <li>{mood}</li>
-      </Link>
-    )
-  }
-}
+const moodBoxes = () =>
+  <ul className="moody-moodbox">
+    {API_MOODS.map(moodTemplate)}
+  </ul>
+
+export default moodBoxes
