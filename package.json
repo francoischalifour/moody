@@ -4,6 +4,10 @@
   "description": "Music for your feelings.",
   "license": "MIT",
   "repository": "francoischalifour/moody",
+  "scripts": {
+    "dev": "gulp watch",
+    "lint": "./node_modules/.bin/eslint app/scripts/*"
+  },
   "devDependencies": {
     "babelify": "^6.0.2",
     "browserify": "^8.1.3",
