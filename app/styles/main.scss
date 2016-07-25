@@ -174,23 +174,6 @@ a {
 }
 
 /**
- * Moody searchbox
- */
-
-.moody-hero__searchbox {
-  width: 100%;
-  max-width: 348px;
-  padding: 16px;
-  font-size: 1.2em;
-  font-family: $font-family;
-  outline: none;
-  border: none;
-  @include border-radius(4px);
-  background-color: rgba(255, 255, 255, .9);
-  @include box-shadow(0 4px 6px rgba(0, 0, 0, .16));
-}
-
-/**
  * Moody mood box
  */
 
