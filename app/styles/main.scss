@@ -6,6 +6,7 @@ html,
 body,
 #app {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -244,12 +245,14 @@ a {
 .moody-playlist__cover {
   z-index: -1;
   position: absolute;
-  opacity: .2;
   margin: auto;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  width: 250px;
+  height: 250px;
+  border: 192px solid #212121;
   border-radius: 50%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .16);
   animation: popIn .5s 1s ease-out both;
@@ -270,11 +273,6 @@ a {
 /**
  * Moody music player
  */
-
-.moody-player {
-  max-width: 100%;
-  height: auto;
-}
 
 .moody-player iframe,
 .moody-player object,
