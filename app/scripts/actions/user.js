@@ -5,18 +5,14 @@ export const USER_RECEIVE = 'USER_RECEIVE'
 
 const spotifyApi = new Spotify()
 
-const actionRequestUser = () => {
-  return {
-    type: USER_REQUEST
-  }
-}
+const actionRequestUser = () => ({
+  type: USER_REQUEST,
+})
 
-const actionReceiveUser = user => {
-  return {
-    type: USER_RECEIVE,
-    user
-  }
-}
+const actionReceiveUser = user => ({
+  type: USER_RECEIVE,
+  user,
+})
 
 export const getUser = () => dispatch => {
   dispatch(actionRequestUser())

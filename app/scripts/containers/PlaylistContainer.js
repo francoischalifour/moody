@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
 import { API_MOODS } from '../actions/api'
@@ -12,7 +12,7 @@ class PlaylistContainer extends Component {
     super(props)
 
     const {
-      routeParams
+      routeParams,
     } = this.props
 
     this.moods = API_MOODS.map(mood => mood.toLowerCase())
@@ -21,7 +21,7 @@ class PlaylistContainer extends Component {
 
   componentDidMount() {
     const {
-      dispatch
+      dispatch,
     } = this.props
 
     dispatch(getPlaylists(this.name))
@@ -29,11 +29,11 @@ class PlaylistContainer extends Component {
 
   render() {
     const {
-      playlists
+      playlists,
     } = this.props
 
     const {
-      isComplete
+      isComplete,
     } = playlists
 
     if (this.moods.includes(this.name)) {
@@ -49,24 +49,24 @@ class PlaylistContainer extends Component {
             </div>
           </div>
         )
-      } else {
-        const playlistContent = playlists.playlists.playlists.items
-        const randomSongNo = Math.random() * (playlistContent.length - 1)
-        const playlistURI = playlistContent[parseInt(randomSongNo)].uri
-        const playlistCover = playlistContent[parseInt(randomSongNo)].images[0].url
-
-        return (
-          <div>
-            <Sidebar />
-
-            <Playlist
-              name={this.name}
-              playlist={playlistURI}
-              cover={playlistCover}
-            />
-          </div>
-        )
       }
+
+      const playlistContent = playlists.playlists.playlists.items
+      const randomSongNo = Math.random() * (playlistContent.length - 1)
+      const playlistURI = playlistContent[parseInt(randomSongNo, 10)].uri
+      const playlistCover = playlistContent[parseInt(randomSongNo, 10)].images[0].url
+
+      return (
+        <div>
+          <Sidebar />
+
+          <Playlist
+            name={this.name}
+            playlist={playlistURI}
+            cover={playlistCover}
+          />
+        </div>
+      )
     }
 
     return (
@@ -83,11 +83,15 @@ class PlaylistContainer extends Component {
   }
 }
 
-function select(state) {
-  return {
-    playlists: state.playlists,
-    tracks: state.tracks
-  }
+PlaylistContainer.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  routeParams: PropTypes.object.isRequired,
+  playlists: PropTypes.object,
 }
+
+const select = state => ({
+  playlists: state.playlists,
+  tracks: state.tracks,
+})
 
 export default connect(select)(PlaylistContainer)

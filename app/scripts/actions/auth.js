@@ -5,17 +5,23 @@ import {
   SPOTIFY_CLIENT_ID,
   REDIRECT_URI,
   STATE_KEY,
-  SPOTIFY_TOKEN_KEY
+  SPOTIFY_TOKEN_KEY,
 } from './spotify'
-
-export const SPOTIFY_TOKENS = 'SPOTIFY_TOKENS'
-export const SPOTIFY_ME_BEGIN = 'SPOTIFY_ME_BEGIN'
-export const SPOTIFY_ME_SUCCESS = 'SPOTIFY_ME_SUCCESS'
-export const SPOTIFY_ME_FAILURE = 'SPOTIFY_ME_FAILURE'
 
 const spotifyApi = new Spotify()
 
-export const setTokens = accessToken => dispatch => {
+const generateRandomString = length => {
+  let statusString = ''
+  const allowedChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+
+  for (let i = 0; i < length; i++) {
+    statusString += allowedChars.charAt(Math.floor(Math.random() * allowedChars.length))
+  }
+
+  return statusString
+}
+
+export const setTokens = accessToken => () => {
   if (!accessToken) return
 
   const tokenState = accessToken.split('state=')[1].split('?')[0]
@@ -27,33 +33,22 @@ export const setTokens = accessToken => dispatch => {
   }
 }
 
-export const loginUser = () => dispatch => {
+export const loginUser = () => () => {
   const state = generateRandomString(16)
   localStorage.setItem(STATE_KEY, state)
   const scope = 'user-read-private user-read-email'
-  let url = 'https://accounts.spotify.com/authorize'
-      url += '?response_type=token'
-      url += `&client_id=${encodeURIComponent(SPOTIFY_CLIENT_ID)}`
-      url += `&scope=${encodeURIComponent(scope)}`
-      url += `&redirect_uri=${encodeURIComponent(REDIRECT_URI)}`
-      url += `&state=${encodeURIComponent(state)}`
+  const url = 'https://accounts.spotify.com/authorize' +
+    '?response_type=token' +
+    `&client_id=${encodeURIComponent(SPOTIFY_CLIENT_ID)}` +
+    `&scope=${encodeURIComponent(scope)}` +
+    `&redirect_uri=${encodeURIComponent(REDIRECT_URI)}` +
+    `&state=${encodeURIComponent(state)}`
 
   window.location = url
 }
 
-export const logoutUser = () => dispatch => {
+export const logoutUser = () => () => {
   localStorage.clear()
 
   hashHistory.push('/')
-}
-
-function generateRandomString(length) {
-  var statusString = ''
-  const allowedChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-
-  for (var i = 0; i < length; i++) {
-      statusString += allowedChars.charAt(Math.floor(Math.random() * allowedChars.length))
-  }
-
-  return statusString
 }

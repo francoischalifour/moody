@@ -4,7 +4,7 @@ import user from './userReducer'
 
 const rootReducer = combineReducers({
   playlists,
-  user
+  user,
 })
 
 export default rootReducer

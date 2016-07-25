@@ -2,33 +2,37 @@ import assign from 'object-assign'
 
 import {
   PLAYLISTS_REQUEST,
-  PLAYLISTS_RECEIVE
+  PLAYLISTS_RECEIVE,
 } from '../actions/playlists'
 
 const initialState = {
   isFetching: false,
   isComplete: false,
   playlists: [],
-  tracks: []
+  tracks: [],
 }
 
 export default function playlistsReducer(state = initialState, action) {
-  switch (action.type) {
+  const {
+    type,
+    playlists,
+  } = action
+
+  switch (type) {
     case PLAYLISTS_REQUEST:
       return assign({}, state, {
         isFetching: true,
-        isComplete: false
+        isComplete: false,
       })
 
     case PLAYLISTS_RECEIVE:
-      const playlists = action.playlists
-
       return assign({}, state, {
         isFetching: false,
         isComplete: true,
-        playlists
+        playlists,
       })
-  }
 
-  return state
+    default:
+      return state
+  }
 }

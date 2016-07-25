@@ -1,18 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
 import {
   loginUser,
-  logoutUser
+  logoutUser,
 } from '../actions/auth'
 import {
   USER_KEY,
-  SPOTIFY_TOKEN_KEY
+  SPOTIFY_TOKEN_KEY,
 } from '../actions/spotify'
 
 import Sidebar from '../components/Sidebar'
 
 class UserContainer extends Component {
+  constructor(props) {
+    super(props)
+
+    this.handleLogin = this.handleLogin.bind(this)
+    this.handleLogout = this.handleLogout.bind(this)
+  }
+
   handleLogin() {
     this.props.dispatch(loginUser())
   }
@@ -35,7 +42,7 @@ class UserContainer extends Component {
 
             <button
               className="moody-login__button"
-              onClick={this.handleLogin.bind(this)}
+              onClick={this.handleLogin}
             >
                Login with Spotify
             </button>
@@ -58,7 +65,7 @@ class UserContainer extends Component {
 
           <button
             className="moody-login__button"
-            onClick={this.handleLogout.bind(this)}
+            onClick={this.handleLogout}
           >
              Log out
           </button>
@@ -66,6 +73,10 @@ class UserContainer extends Component {
       </div>
     )
   }
+}
+
+UserContainer.propTypes = {
+  dispatch: PropTypes.func,
 }
 
 export default connect()(UserContainer)

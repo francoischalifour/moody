@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
 import { setTokens } from '../actions/auth'
 import {
   USER_KEY,
-  SPOTIFY_TOKEN_KEY
+  SPOTIFY_TOKEN_KEY,
 } from '../actions/spotify'
 import { getUser } from '../actions/user'
 
@@ -14,9 +14,9 @@ import Notification from '../components/Notification'
 
 class HomeContainer extends Component {
   componentDidMount() {
-  	const {
+    const {
 			routeParams,
-			dispatch
+			dispatch,
 		} = this.props
 
     if (routeParams.splat) {
@@ -28,11 +28,11 @@ class HomeContainer extends Component {
   render() {
     const {
       routeParams,
-      user
+      user,
     } = this.props
 
     const {
-      isComplete
+      isComplete,
     } = user
 
     let notification = null
@@ -64,9 +64,15 @@ class HomeContainer extends Component {
   }
 }
 
+HomeContainer.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  routeParams: PropTypes.object.isRequired,
+  user: PropTypes.object.isRequired,
+}
+
 function select(state) {
   return {
-    user: state.user
+    user: state.user,
   }
 }
 

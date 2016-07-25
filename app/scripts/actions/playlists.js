@@ -5,18 +5,14 @@ export const PLAYLISTS_RECEIVE = 'PLAYLISTS_RECEIVE'
 
 const spotifyApi = new Spotify()
 
-const actionRequestPlaylists = () => {
-  return {
-    type: PLAYLISTS_REQUEST
-  }
-}
+const actionRequestPlaylists = () => ({
+  type: PLAYLISTS_REQUEST,
+})
 
-const actionReceivePlaylists = playlists => {
-  return {
-    type: PLAYLISTS_RECEIVE,
-    playlists
-  }
-}
+const actionReceivePlaylists = playlists => ({
+  type: PLAYLISTS_RECEIVE,
+  playlists,
+})
 
 export const getPlaylists = playlistName => dispatch => {
   dispatch(actionRequestPlaylists())

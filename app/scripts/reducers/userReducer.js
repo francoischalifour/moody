@@ -2,32 +2,36 @@ import assign from 'object-assign'
 
 import {
   USER_REQUEST,
-  USER_RECEIVE
+  USER_RECEIVE,
 } from '../actions/user'
 
 const initialState = {
   isFetching: false,
   isComplete: false,
-  user: {}
+  user: {},
 }
 
 export default function userReducer(state = initialState, action) {
-  switch (action.type) {
+  const {
+    type,
+    user,
+  } = action
+
+  switch (type) {
     case USER_REQUEST:
       return assign({}, state, {
         isFetching: true,
-        isComplete: false
+        isComplete: false,
       })
 
     case USER_RECEIVE:
-      const user = action.user
-
       return assign({}, state, {
         isFetching: false,
         isComplete: true,
-        user
+        user,
       })
-  }
 
-  return state
+    default:
+      return state
+  }
 }
