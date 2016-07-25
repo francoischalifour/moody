@@ -20,8 +20,8 @@ To build the project, you will first need to install [npm](http://npmjs.org).
 
 ###### Commands
 
-- Init: `$ npm install`
-- Run: `$ gulp watch`
+- Init: `npm install`
+- Run: `npm run dev`
 - Browse: [http://localhost:9000](http://localhost:9000)
 
 ## License
