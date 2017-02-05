@@ -256,6 +256,7 @@ a {
   border-radius: 50%;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .16);
   animation: popIn .5s 1s ease-out both;
+  overflow: scroll;
 }
 
 @keyframes popIn {
