@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": "francoischalifour/moody",
   "scripts": {
-    "dev": "gulp watch",
+    "dev": "./node_modules/.bin/gulp watch",
     "lint": "./node_modules/.bin/eslint app/scripts/*"
   },
   "engines": {
